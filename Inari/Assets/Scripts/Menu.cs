@@ -14,6 +14,11 @@ public class Menu : MonoBehaviour
     {
         playButton.onClick.AddListener(() => PlayGame());
         quitButton.onClick.AddListener(() => QuitGame());
+
+        if(Application.platform == RuntimePlatform.WebGLPlayer)
+        {
+            quitButton.gameObject.SetActive(false);
+        }
     }
 
     private void PlayGame()
