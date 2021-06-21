@@ -1,9 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-<<<<<<< Updated upstream
-using Yarn.Unity;
-=======
 using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.Events;
@@ -12,7 +9,6 @@ using System.Collections.Generic;
 using System.Reflection;
 using CsvHelper;
 using System;
->>>>>>> Stashed changes
 
 public class Person : MonoBehaviour
 {
