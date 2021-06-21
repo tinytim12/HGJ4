@@ -12,10 +12,15 @@ using System;
 
 public class Person : MonoBehaviour
 {
-    public YarnProgram[] yarnScripts;
-    // Start is called before the first frame update
+    public YarnProgram[] dialogueRunnerScripts;
+        // Start is called before the first frame update
+
+
+
+    public String person;
     void Awake() {
-        transform.GetChild(0).transform.GetChild(0).GetComponent<Yarn.Unity.DialogueRunner>().yarnScripts = yarnScripts;
+        
+        transform.GetChild(0).transform.GetChild(0).GetComponent<Yarn.Unity.DialogueRunner>().yarnScripts = dialogueRunnerScripts;
 
     }
 
