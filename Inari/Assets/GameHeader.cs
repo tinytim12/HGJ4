@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn.Unity;
 
 public class GameHeader : MonoBehaviour
 {
-    public float timeRemaining = 10;
+    public float timeRemaining;
     public Narrator narrator;
     public int day;
 
@@ -15,6 +16,7 @@ public class GameHeader : MonoBehaviour
     void Start()
     {
         day = 1;
+        createPerson(0);
     }
 
     // Update is called once per frame
@@ -24,8 +26,16 @@ public class GameHeader : MonoBehaviour
         {
             timeRemaining -= Time.deltaTime;
         }
+        if (timeRemaining < 10 && day == 2)
+        {
+            day++;
+            if (narrator != null)
+            {
+                narrator.play();
+            }
 
-        if (timeRemaining < 8 && day ==1)
+        }
+        if (timeRemaining < 45 && day ==1)
         {
             day++;
             if (narrator != null)
@@ -34,62 +44,32 @@ public class GameHeader : MonoBehaviour
             }
             
         }
+        
     }
 
-    int getDay()
+
+    [YarnCommand("getDay")]
+    public int getDay()
     {
         return day;
     }
 
-    public void Merchant()
+    //0 = Merchant
+    //1 = Prostitute
+    //2 = Blacksmith
+    //3 = Thief
+    //4 = Government
+    //5 = Westerner
+
+    public void createPerson(int number)
     {
         GameObject person = Instantiate(personPrefab);
         //add whatever meshes or other components here
-        
-        person.GetComponent<Person>().dialogueRunnerScripts[0] = yarnScripts[0];
-        
-
-        //Or if you do create prefabs, just instantiate them here instead
+        Debug.Log(yarnScripts[0]);
+        YarnProgram [] yarnList = new YarnProgram[1];
+        yarnList[0] = yarnScripts[number];
+        person.transform.GetChild(0).transform.GetChild(0).GetComponent<Yarn.Unity.DialogueRunner>().yarnScripts = yarnList;
     }
-
-    public void Prostitute()
-    {
-        GameObject person = Instantiate(personPrefab);
-        //add whatever meshes or other components here
-
-        person.GetComponent<Person>().dialogueRunnerScripts[0] = yarnScripts[1];
-    }
-
-    public void Blacksmith()
-    {
-        GameObject person = Instantiate(personPrefab);
-        //add whatever meshes or other components here
-
-        person.GetComponent<Person>().dialogueRunnerScripts[0] = yarnScripts[2];
-    }
-
-    public void Thief()
-    {
-        GameObject person = Instantiate(personPrefab);
-        //add whatever meshes or other components here
-
-        person.GetComponent<Person>().dialogueRunnerScripts[0] = yarnScripts[3];
-    }
-
-    public void Government()
-    {
-        GameObject person = Instantiate(personPrefab);
-        //add whatever meshes or other components here
-
-        person.GetComponent<Person>().dialogueRunnerScripts[0] = yarnScripts[4];
-    }
-
-    public void Westerner()
-    {
-        GameObject person = Instantiate(personPrefab);
-        //add whatever meshes or other components here
-
-        person.GetComponent<Person>().dialogueRunnerScripts[0] = yarnScripts[5];
-    }
+    
 
 }

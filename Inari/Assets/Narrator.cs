@@ -11,11 +11,15 @@ public class Narrator : MonoBehaviour
     public Text text;
     public DialogueRunner dialogueRunner;
     public DialogueUI dialogueUI;
+    public InMemoryVariableStorage varStorage;
+    public GameHeader gameHeader;
     void Start()
     {
         text = this.gameObject.transform.GetChild(0).transform.GetChild(0).GetComponent<Text>();
         dialogueRunner = GameObject.FindGameObjectWithTag("NarratorDialogue").GetComponent<DialogueRunner>();
         dialogueUI = GameObject.FindGameObjectWithTag("NarratorDialogue").GetComponent<DialogueUI>();
+        varStorage = GameObject.FindGameObjectWithTag("NarratorDialogue").GetComponent<InMemoryVariableStorage>();
+        gameHeader = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameHeader>();
     }
 
     // Update is called once per frame
@@ -36,6 +40,9 @@ public class Narrator : MonoBehaviour
         text.enabled = true;
         dialogueRunner.StartDialogue();
         StartCoroutine(FadeImage(1));
+        Debug.Log("fade finished");
+
+
 
 
     }
@@ -64,7 +71,15 @@ public class Narrator : MonoBehaviour
             yield return null;
         }
         dialogueUI.MarkLineComplete();
+        if (dialogueRunner.IsDialogueRunning)
+        {
+            StartCoroutine(FadeImage(1));
+        }
+        else
+        {
+            varStorage.SetValue("$day", gameHeader.getDay());
 
+        }
 
     }
 

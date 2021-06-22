@@ -1,0 +1,31 @@
+
+
+title: Narrator
+tags: 
+colorID: 0
+position: -9,-424
+---
+<<if $day is null>>
+    <<set $day to 1>>
+<<endif>>
+<<if $day is 1>>
+    There was no more food in the forest, so I wandered to a human town.
+    A boy proposed an interesting trade.
+    Test
+<<endif>>
+<<if $day is 2>>
+    A few grains of rice...they disappear with one bite.
+    My stomach remains empty. Are there more humans around?
+<<endif>>
+<<if $day is 3>>
+    Good fortune blows towards me for only so long.
+    I'll can get my good luck back somehow, if I curse them.
+<<endif>>
+<<if $day is 4>>
+    Some men pledge their loyalty to me 
+    But their faith shrivels up as soon as they get what they want
+    I have to watch out for such people..
+<<endif>>
+
+===
+

@@ -20,7 +20,7 @@ public class Person : MonoBehaviour
     public String person;
     void Awake() {
         
-        transform.GetChild(0).transform.GetChild(0).GetComponent<Yarn.Unity.DialogueRunner>().yarnScripts = dialogueRunnerScripts;
+        //transform.GetChild(0).transform.GetChild(0).GetComponent<Yarn.Unity.DialogueRunner>().yarnScripts = dialogueRunnerScripts;
 
     }
 

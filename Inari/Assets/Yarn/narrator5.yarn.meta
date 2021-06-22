@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 6fe53b8fd5af3694686a6d48d84170fb
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-SG
+  stringIDs:
+  - narrator5-Narrator-0
+  - narrator5-Narrator-1
+  - narrator5-Narrator-2
+  - narrator5-Narrator-3
+  - narrator5-Narrator-4
+  - narrator5-Narrator-5
+  - narrator5-Narrator-6
+  - narrator5-Narrator-7
+  - narrator5-Narrator-8
+  - narrator5-Narrator-9
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 6fe53b8fd5af3694686a6d48d84170fb, type: 3}
+  localizations: []
