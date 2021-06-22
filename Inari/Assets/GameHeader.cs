@@ -75,7 +75,8 @@ public class GameHeader : MonoBehaviour
     {
         dialogueRunner.startNode = person.startNode;
         dialogueRunner.yarnScripts = person.dialogueRunnerScripts;
-        dialogueRunner.StartDialogue();
+        dialogueRunner.Load();
+        dialogueRunner.StartDialogue("Narrator");
         StartCoroutine(FadeImage(1));
 
     }
