@@ -11,12 +11,24 @@ public class GameHeader : MonoBehaviour
     public OnDayChange onDayChanged;
     public float timeRemaining = 10;
     public Person narrator;
+    public Person blacksmith;
+
     public int day;
     public DialogueRunner dialogueRunner;
     public DialogueUI dialogueUI;
     public Text dialogueText;
+    public Blessings blessings;
 
-    private void Awake()
+    public DialogueRunner dialogueRunnerNarrator;
+    public DialogueUI dialogueUINarrator;
+    public Text dialogueTextNarrator;
+
+    public int divinity;
+    public int fortune;
+
+    
+
+private void Awake()
     {
         // Create singleton to easily access GameHeader from other scripts
 
@@ -62,7 +74,7 @@ public class GameHeader : MonoBehaviour
     private void OnDayChanged(int newDay)
     {
         if(day == 2)
-            PlayPerson(narrator);
+            playCitizen(blacksmith);
 
         Building[] buildings = FindObjectsOfType<Building>();
         if(buildings.Length == 0) return;
@@ -71,13 +83,27 @@ public class GameHeader : MonoBehaviour
         randomBuilding.Alert();
     }
 
-    public void PlayPerson(Person person)
+    public void playNarrator(Person person)
+    {
+        dialogueRunnerNarrator.startNode = person.startNode;
+        dialogueRunnerNarrator.yarnScripts = person.dialogueRunnerScripts;
+        dialogueRunnerNarrator.Load();
+        dialogueRunnerNarrator.StartDialogue();
+        StartCoroutine(FadeImage(1));
+
+    }
+
+    public void playCitizen(Person person)
     {
         dialogueRunner.startNode = person.startNode;
         dialogueRunner.yarnScripts = person.dialogueRunnerScripts;
         dialogueRunner.Load();
-        dialogueRunner.StartDialogue("Narrator");
-        StartCoroutine(FadeImage(1));
+        dialogueRunner.StartDialogue();
+
+        blessings.divinityBlessing = person.divinityBlessing;
+        blessings.fortuneBlessing = person.fortuneBlessing;
+        blessings.divinityCurse = person.divinityCurse;
+        blessings.fortuneCurse = person.fortuneCurse;
     }
     
     IEnumerator FadeImage(float t)
@@ -104,4 +130,7 @@ public class GameHeader : MonoBehaviour
         }
         dialogueUI.MarkLineComplete();
     }
+
+    
+
 }
