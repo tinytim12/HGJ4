@@ -8,6 +8,7 @@ public class GameHeader : MonoBehaviour
     public float timeRemaining;
     public Narrator narrator;
     public int day;
+    public bool boy;
 
     public GameObject personPrefab;
     public YarnProgram[] yarnScripts;
@@ -16,7 +17,7 @@ public class GameHeader : MonoBehaviour
     void Start()
     {
         day = 1;
-        createPerson(0);
+        
     }
 
     // Update is called once per frame
@@ -41,6 +42,7 @@ public class GameHeader : MonoBehaviour
             if (narrator != null)
             {
                 narrator.play();
+ 
             }
             
         }
@@ -54,13 +56,23 @@ public class GameHeader : MonoBehaviour
         return day;
     }
 
+    public bool getBoy()
+    {
+        return boy;
+    }
+
+    public void setBoy(bool val)
+    {
+        boy = val;
+    }
+
     //0 = Merchant
     //1 = Prostitute
     //2 = Blacksmith
     //3 = Thief
     //4 = Government
     //5 = Westerner
-
+    //6 = Boy
     public void createPerson(int number)
     {
         GameObject person = Instantiate(personPrefab);

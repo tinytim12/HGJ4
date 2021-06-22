@@ -30,9 +30,7 @@ public class Narrator : MonoBehaviour
 
     public void play()
     {
-        Debug.Log("hit");
-        enableText();
-        
+        enableText(); 
 
     }
     private void enableText ()
@@ -40,7 +38,6 @@ public class Narrator : MonoBehaviour
         text.enabled = true;
         dialogueRunner.StartDialogue();
         StartCoroutine(FadeImage(1));
-        Debug.Log("fade finished");
 
 
 
@@ -70,13 +67,24 @@ public class Narrator : MonoBehaviour
             text.color = new Color(text.color.r, text.color.g, text.color.b, text.color.a - (Time.deltaTime / t));
             yield return null;
         }
+
         dialogueUI.MarkLineComplete();
         if (dialogueRunner.IsDialogueRunning)
         {
+            Debug.Log("Hit dialogue");
+
             StartCoroutine(FadeImage(1));
+            if (!gameHeader.getBoy())
+            {
+                gameHeader.setBoy(true);
+                gameHeader.createPerson(6);
+            }
         }
         else
         {
+            Debug.Log("Esaped");
+            
+
             varStorage.SetValue("$day", gameHeader.getDay());
 
         }
