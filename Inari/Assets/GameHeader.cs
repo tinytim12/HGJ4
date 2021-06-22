@@ -35,6 +35,7 @@ public class GameHeader : MonoBehaviour
         onDayChanged += OnDayChanged;
 
         day = 1;
+        
     }
 
     // Update is called once per frame
@@ -45,20 +46,23 @@ public class GameHeader : MonoBehaviour
             timeRemaining -= Time.deltaTime;
         }
 
-        if (timeRemaining < 8 && day ==1)
+        if (timeRemaining < 10 && day == 2)
         {
             day++;
+            onDayChanged(day);
 
-            if(onDayChanged != null)
-            {
-                onDayChanged(day);
-            }
+        }
+        else if (timeRemaining < 45 && day ==1)
+        {
+            day++;
+            onDayChanged(day);
         }
     }
 
     private void OnDayChanged(int newDay)
     {
-        PlayPerson(narrator);
+        if(day == 2)
+            PlayPerson(narrator);
 
         Building[] buildings = FindObjectsOfType<Building>();
         Building randomBuilding = buildings[Random.Range(0, buildings.Length)];

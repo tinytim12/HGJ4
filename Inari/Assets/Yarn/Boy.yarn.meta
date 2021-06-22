@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0201f73392d5d724d923f3d57e137f1e
+guid: 3962172e59b5ff64093ea84129c43d96
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -8,11 +8,11 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
-  baseLanguageID: en-SG
-  stringIDs: []
-  compilationStatus: 0
-  isSuccesfullyCompiled: 0
-  compilationErrorMessage: "Error on line 6 at position 14:\nmissing '(' at 'GameHeader'\r\n<<if
-    (getDay GameHeader) is 1>>\r\r\n             ^^^^^^^^^^"
+  baseLanguageID: 
+  stringIDs:
+  - Boy-Monologue-0
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
   baseLanguage: {instanceID: 0}
   localizations: []
