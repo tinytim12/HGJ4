@@ -8,6 +8,6 @@ public class Building : MonoBehaviour
     
     public void Alert()
     {
-        GameHeader.Instance.PlayPerson(personWhoLivesHere);
+        GameHeader.Instance.playCitizen(personWhoLivesHere);
     }
 }
