@@ -1,19 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using Yarn.Unity;
 
 public class GameHeader : MonoBehaviour
 {
+    public static GameHeader Instance;
+    public delegate void OnDayChange(int newDay);
+    public OnDayChange onDayChanged;
     public float timeRemaining = 10;
-    public Narrator narrator;
+    public Person narrator;
     public int day;
+    public DialogueRunner dialogueRunner;
+    public DialogueUI dialogueUI;
+    public Text dialogueText;
 
-    public GameObject personPrefab;
-    public YarnProgram[] yarnScripts;
+    private void Awake()
+    {
+        // Create singleton to easily access GameHeader from other scripts
 
-    // Start is called before the first frame update
+        if(Instance == null)
+        {
+            Instance = this;
+        }
+        else if(Instance != this)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void Start()
     {
+        onDayChanged += OnDayChanged;
+
         day = 1;
     }
 
@@ -28,68 +48,54 @@ public class GameHeader : MonoBehaviour
         if (timeRemaining < 8 && day ==1)
         {
             day++;
-            if (narrator != null)
+
+            if(onDayChanged != null)
             {
-                narrator.play();
+                onDayChanged(day);
             }
-            
         }
     }
 
-    int getDay()
+    private void OnDayChanged(int newDay)
     {
-        return day;
+        PlayPerson(narrator);
+
+        Building[] buildings = FindObjectsOfType<Building>();
+        Building randomBuilding = buildings[Random.Range(0, buildings.Length)];
+        randomBuilding.Alert();
     }
 
-    public void Merchant()
+    public void PlayPerson(Person person)
     {
-        GameObject person = Instantiate(personPrefab);
-        //add whatever meshes or other components here
+        dialogueRunner.startNode = person.startNode;
+        dialogueRunner.yarnScripts = person.dialogueRunnerScripts;
+        dialogueRunner.StartDialogue();
+        StartCoroutine(FadeImage(1));
+
+    }
+
+    IEnumerator FadeImage(float t)
+    {
+        // fade from opaque to transparent
+   
+        // loop over 1 second backwards
+        dialogueText.color = new Color(dialogueText.color.r, dialogueText.color.g, dialogueText.color.b, 0);
+        while (dialogueText.color.a < 1.0f)
+        {
+            dialogueText.color = new Color(dialogueText.color.r, dialogueText.color.g, dialogueText.color.b, dialogueText.color.a + (Time.deltaTime / t));
+            yield return null;
+        }
+
         
-        person.GetComponent<Person>().dialogueRunnerScripts[0] = yarnScripts[0];
-        
+        // fade from transparent to opaque
+        yield return new WaitForSeconds(4);
+            // loop over 1 second
 
-        //Or if you do create prefabs, just instantiate them here instead
+        while (dialogueText.color.a > 0)
+        {
+            dialogueText.color = new Color(dialogueText.color.r, dialogueText.color.g, dialogueText.color.b, dialogueText.color.a - (Time.deltaTime / t));
+            yield return null;
+        }
+        dialogueUI.MarkLineComplete();
     }
-
-    public void Prostitute()
-    {
-        GameObject person = Instantiate(personPrefab);
-        //add whatever meshes or other components here
-
-        person.GetComponent<Person>().dialogueRunnerScripts[0] = yarnScripts[1];
-    }
-
-    public void Blacksmith()
-    {
-        GameObject person = Instantiate(personPrefab);
-        //add whatever meshes or other components here
-
-        person.GetComponent<Person>().dialogueRunnerScripts[0] = yarnScripts[2];
-    }
-
-    public void Thief()
-    {
-        GameObject person = Instantiate(personPrefab);
-        //add whatever meshes or other components here
-
-        person.GetComponent<Person>().dialogueRunnerScripts[0] = yarnScripts[3];
-    }
-
-    public void Government()
-    {
-        GameObject person = Instantiate(personPrefab);
-        //add whatever meshes or other components here
-
-        person.GetComponent<Person>().dialogueRunnerScripts[0] = yarnScripts[4];
-    }
-
-    public void Westerner()
-    {
-        GameObject person = Instantiate(personPrefab);
-        //add whatever meshes or other components here
-
-        person.GetComponent<Person>().dialogueRunnerScripts[0] = yarnScripts[5];
-    }
-
 }

@@ -19,7 +19,7 @@ public class Menu : MonoBehaviour
         {
             quitButton.gameObject.SetActive(false);
         }
-    }
+        }
 
     private void PlayGame()
     {
