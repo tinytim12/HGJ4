@@ -65,6 +65,8 @@ public class GameHeader : MonoBehaviour
             PlayPerson(narrator);
 
         Building[] buildings = FindObjectsOfType<Building>();
+        if(buildings.Length == 0) return;
+
         Building randomBuilding = buildings[Random.Range(0, buildings.Length)];
         randomBuilding.Alert();
     }

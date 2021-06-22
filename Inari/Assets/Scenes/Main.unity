@@ -139,24 +139,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5935829474028046594, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
   m_PrefabInstance: {fileID: 7338057455575716346}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &440284552 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5935829475857655956, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
-  m_PrefabInstance: {fileID: 7338057455575716346}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &440284557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 440284552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c6ccdf5c3d59dc45b5090924c2c315f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 1827280297}
 --- !u!1 &474477573
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,6 +434,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DefaultBuilding (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7945a2cbca14df9428705d2e63e0f53e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7945a2cbca14df9428705d2e63e0f53e, type: 3}
 --- !u!1 &895041516 stripped
@@ -673,6 +659,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DefaultBuilding
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7945a2cbca14df9428705d2e63e0f53e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7945a2cbca14df9428705d2e63e0f53e, type: 3}
 --- !u!1 &1213163344 stripped
@@ -759,6 +749,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DefaultBuilding (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7945a2cbca14df9428705d2e63e0f53e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7945a2cbca14df9428705d2e63e0f53e, type: 3}
 --- !u!1 &1426329946 stripped
@@ -834,6 +828,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DefaultBuilding (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7945a2cbca14df9428705d2e63e0f53e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7945a2cbca14df9428705d2e63e0f53e, type: 3}
 --- !u!1 &1772279732 stripped
@@ -908,6 +906,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7945a2cbca14df9428705d2e63e0f53e, type: 3}
       propertyPath: m_Name
       value: DefaultBuilding (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7945a2cbca14df9428705d2e63e0f53e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7945a2cbca14df9428705d2e63e0f53e, type: 3}
@@ -994,6 +996,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7945a2cbca14df9428705d2e63e0f53e, type: 3}
       propertyPath: m_Name
       value: DefaultBuilding (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7945a2cbca14df9428705d2e63e0f53e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7945a2cbca14df9428705d2e63e0f53e, type: 3}
@@ -1163,12 +1169,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5935829475398715329, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
       propertyPath: yarnScripts.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5935829475398715329, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
       propertyPath: yarnScripts.Array.data[0]
       value: 
-      objectReference: {fileID: 2480198943629176163, guid: 0201f73392d5d724d923f3d57e137f1e, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 5935829475398715334, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
       propertyPath: textSpeed
       value: 0
