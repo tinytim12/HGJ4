@@ -17,6 +17,7 @@ public class GameHeader : MonoBehaviour
     public DialogueRunner dialogueRunner;
     public DialogueUI dialogueUI;
     public Text dialogueText;
+    public Blessings blessings;
 
     public DialogueRunner dialogueRunnerNarrator;
     public DialogueUI dialogueUINarrator;
@@ -99,6 +100,10 @@ private void Awake()
         dialogueRunner.Load();
         dialogueRunner.StartDialogue();
 
+        blessings.divinityBlessing = person.divinityBlessing;
+        blessings.fortuneBlessing = person.fortuneBlessing;
+        blessings.divinityCurse = person.divinityCurse;
+        blessings.fortuneCurse = person.fortuneCurse;
     }
 
     IEnumerator FadeImage(float t)

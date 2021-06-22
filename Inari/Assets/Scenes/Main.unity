@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 474477576}
   m_Layer: 0
   m_Name: GameHeader
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -173,14 +173,15 @@ MonoBehaviour:
   narrator: {fileID: 11400000, guid: b9d20c0203e53774cafc5a125e6a5790, type: 2}
   blacksmith: {fileID: 11400000, guid: b9d20c0203e53774cafc5a125e6a5790, type: 2}
   day: 1
-  dialogueRunner: {fileID: 198015176}
-  dialogueUI: {fileID: 1343916269}
-  dialogueText: {fileID: 1827280297}
-  dialogueRunnerNarrator: {fileID: 0}
-  dialogueUINarrator: {fileID: 0}
-  dialogueTextNarrator: {fileID: 0}
-  divinity: 0
-  fortune: 0
+  dialogueRunner: {fileID: 532033668}
+  dialogueUI: {fileID: 532033667}
+  dialogueText: {fileID: 861131753}
+  blessings: {fileID: 1696844592}
+  dialogueRunnerNarrator: {fileID: 198015176}
+  dialogueUINarrator: {fileID: 1343916269}
+  dialogueTextNarrator: {fileID: 1827280297}
+  divinity: 10
+  fortune: 10
 --- !u!4 &474477575
 Transform:
   m_ObjectHideFlags: 0
@@ -300,6 +301,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 27.788, y: -21.302, z: 13.556}
+--- !u!114 &532033667 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5935829475398715334, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
+  m_PrefabInstance: {fileID: 937128813}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04317fce65da54f4997a5c4465b4e93c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &532033668 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5935829475398715329, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
+  m_PrefabInstance: {fileID: 937128813}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &693976044
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,6 +421,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 45, y: 45, z: 0}
+--- !u!114 &861131753 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5530566000613610355, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
+  m_PrefabInstance: {fileID: 937128813}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &895041515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -580,6 +614,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1147776206}
     m_Modifications:
+    - target: {fileID: 1498404884620379178, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1498404884620379178, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1498404884620379178, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1696844592}
+    - target: {fileID: 1498404884620379178, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1498404884620379178, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Curse
+      objectReference: {fileID: 0}
+    - target: {fileID: 1498404884620379178, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Blessings, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1498404884620379178, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1528430210991205427, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -589,12 +651,32 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1528430210991205427, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1696844592}
+    - target: {fileID: 1528430210991205427, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528430210991205427, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Blessing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528430210991205427, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Blessings, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528430210991205427, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4068380849537614946, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
       propertyPath: m_Name
       value: Dialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 5935829474028046594, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
+      propertyPath: m_Name
+      value: Curse
       objectReference: {fileID: 0}
     - target: {fileID: 5935829474028046594, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
       propertyPath: m_IsActive
@@ -647,6 +729,10 @@ PrefabInstance:
     - target: {fileID: 5935829474060538304, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5935829474060538305, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
+      propertyPath: m_Name
+      value: Blessing
       objectReference: {fileID: 0}
     - target: {fileID: 5935829474060538305, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
       propertyPath: m_IsActive
@@ -1125,6 +1211,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   personWhoLivesHere: {fileID: 11400000, guid: b9d20c0203e53774cafc5a125e6a5790, type: 2}
+--- !u!1 &1696844587 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5935829475857655956, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
+  m_PrefabInstance: {fileID: 937128813}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1696844592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696844587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bda9891d6f57c94294316d73ba9ce55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  divinityBlessing: 0
+  fortuneBlessing: 0
+  divinityCurse: 0
+  fortuneCurse: 0
+  gameHeader: {fileID: 0}
 --- !u!1001 &1772279731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1403,7 +1511,7 @@ GameObject:
   m_Component:
   - component: {fileID: 26847570472249232}
   m_Layer: 0
-  m_Name: DialogueSystem
+  m_Name: Narrator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
