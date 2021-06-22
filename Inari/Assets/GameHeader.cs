@@ -78,9 +78,8 @@ public class GameHeader : MonoBehaviour
         dialogueRunner.Load();
         dialogueRunner.StartDialogue("Narrator");
         StartCoroutine(FadeImage(1));
-
     }
-
+    
     IEnumerator FadeImage(float t)
     {
         // fade from opaque to transparent
