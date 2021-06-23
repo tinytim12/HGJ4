@@ -10,7 +10,11 @@ public class Blessings : MonoBehaviour
     public int divinityCurse;
     public int fortuneCurse;
 
+    public bool good;
+
     public GameHeader gameHeader;
+
+    public Person p;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +27,9 @@ public class Blessings : MonoBehaviour
         //divinity inCrease is initially small. Shrine should 
         gameHeader.divinity += divinityBlessing;
         gameHeader.fortune += fortuneBlessing;
+        if (good){
+            gameHeader.shrinePoints++;
+        }
     }
 
     public void Curse()

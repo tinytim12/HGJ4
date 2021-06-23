@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Fisherman
   m_EditorClassIdentifier: 
   dialogueRunnerScripts:
-  - {fileID: 0}
+  - {fileID: 2480198943629176163, guid: e1898b5b39b116746b5f9dd3f2871b0c, type: 3}
   startNode: 
+  faithfulCitizen: 1
   divinityBlessing: 0
   fortuneBlessing: 0
   divinityCurse: 0

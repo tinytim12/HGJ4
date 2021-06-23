@@ -14,6 +14,8 @@ public class GameHeader : MonoBehaviour
     public Person[] persons;
 
     public int day;
+    public int shrinePoints;
+
     public DialogueRunner dialogueRunner;
     public DialogueUI dialogueUI;
     public Text dialogueText;
@@ -53,6 +55,7 @@ private void Awake()
     // Update is called once per frame
     void Update()
     {
+        checkShrines();
         if (timeRemaining > 0)
         {
             timeRemaining -= Time.deltaTime;
@@ -68,6 +71,15 @@ private void Awake()
         {
             day++;
             onDayChanged(day);
+        }
+    }
+
+    void checkShrines()
+    {
+        if(shrinePoints > 3)
+        {
+            //build shrine
+            shrinePoints = 0;
         }
     }
 
@@ -103,6 +115,10 @@ private void Awake()
         blessings.fortuneBlessing = person.fortuneBlessing;
         blessings.divinityCurse = person.divinityCurse;
         blessings.fortuneCurse = person.fortuneCurse;
+        if (person.faithfulCitizen)
+        {
+            blessings.good = true;
+        }
     }
     
     IEnumerator FadeImage(float t)

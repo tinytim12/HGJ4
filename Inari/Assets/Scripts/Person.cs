@@ -10,6 +10,7 @@ public class Person : ScriptableObject
 {
     public YarnProgram[] dialogueRunnerScripts;
     public string startNode;
+    public bool faithfulCitizen;
 
     public int divinityBlessing;
     public int fortuneBlessing;
