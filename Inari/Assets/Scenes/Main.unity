@@ -171,7 +171,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeRemaining: 10
   narrator: {fileID: 11400000, guid: b9d20c0203e53774cafc5a125e6a5790, type: 2}
-  blacksmith: {fileID: 11400000, guid: b9d20c0203e53774cafc5a125e6a5790, type: 2}
+  persons:
+  - {fileID: 11400000, guid: b9d20c0203e53774cafc5a125e6a5790, type: 2}
+  - {fileID: 11400000, guid: 98c38e67a6a43aa44b840e14646de1e5, type: 2}
+  - {fileID: 11400000, guid: 07e960115674cdd42a1307d91be7f4a3, type: 2}
   day: 1
   dialogueRunner: {fileID: 532033668}
   dialogueUI: {fileID: 532033667}

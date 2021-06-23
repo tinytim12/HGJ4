@@ -8,9 +8,10 @@ public class Building : MonoBehaviour
     public static Building buildingSelected;
     public Person personWhoLivesHere;
     
-    public void Alert()
+    public void Alert(Person p)
     {
-        GameHeader.Instance.playCitizen(personWhoLivesHere);
+        personWhoLivesHere = p;
+        GameHeader.Instance.playCitizen(personWhoLivesHere, "One");
     }
 
     public void OnUserSelect()

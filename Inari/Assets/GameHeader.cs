@@ -11,7 +11,7 @@ public class GameHeader : MonoBehaviour
     public OnDayChange onDayChanged;
     public float timeRemaining = 10;
     public Person narrator;
-    public Person blacksmith;
+    public Person[] persons;
 
     public int day;
     public DialogueRunner dialogueRunner;
@@ -73,14 +73,13 @@ private void Awake()
 
     private void OnDayChanged(int newDay)
     {
-        if(day == 2)
-            playCitizen(blacksmith);
 
         Building[] buildings = FindObjectsOfType<Building>();
         if(buildings.Length == 0) return;
 
         Building randomBuilding = buildings[Random.Range(0, buildings.Length)];
-        randomBuilding.Alert();
+        Person p = persons[Random.Range(0, day)];
+        randomBuilding.Alert(p);
     }
 
     public void playNarrator(Person person)
@@ -93,12 +92,12 @@ private void Awake()
 
     }
 
-    public void playCitizen(Person person)
+    public void playCitizen(Person person, string line)
     {
         dialogueRunner.startNode = person.startNode;
         dialogueRunner.yarnScripts = person.dialogueRunnerScripts;
         dialogueRunner.Load();
-        dialogueRunner.StartDialogue();
+        dialogueRunner.StartDialogue(line);
 
         blessings.divinityBlessing = person.divinityBlessing;
         blessings.fortuneBlessing = person.fortuneBlessing;

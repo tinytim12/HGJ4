@@ -15,3 +15,7 @@ MonoBehaviour:
   dialogueRunnerScripts:
   - {fileID: 2480198943629176163, guid: 6fe53b8fd5af3694686a6d48d84170fb, type: 3}
   startNode: Narrator
+  divinityBlessing: 0
+  fortuneBlessing: 0
+  divinityCurse: 0
+  fortuneCurse: 0

@@ -4,7 +4,7 @@ colorID: 0
 position: -9,-422
 ---
 
-I am Blacksmith 1 
+I am a Fisherman 1
 ===
 
 title: Two
@@ -13,7 +13,7 @@ colorID: 0
 position: -9,-42
 ---
 
-I am Blacksmith 2
+I am a Fisherman 2
 ===
 
 title: Three
@@ -22,5 +22,5 @@ colorID: 0
 position: -9,-4
 ---
 
-I am Blacksmith 3
+I am a Fisherman 3
 ===
