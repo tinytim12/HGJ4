@@ -104,21 +104,16 @@ private void Awake()
 
     }
 
-    public void playCitizen(Person person, string line)
+    public void playCitizen(Building building, string line)
     {
+        Person person = building.personWhoLivesHere;
         dialogueRunner.startNode = person.startNode;
         dialogueRunner.yarnScripts = person.dialogueRunnerScripts;
         dialogueRunner.Load();
         dialogueRunner.StartDialogue(line);
 
-        blessings.divinityBlessing = person.divinityBlessing;
-        blessings.fortuneBlessing = person.fortuneBlessing;
-        blessings.divinityCurse = person.divinityCurse;
-        blessings.fortuneCurse = person.fortuneCurse;
-        if (person.faithfulCitizen)
-        {
-            blessings.good = true;
-        }
+        blessings.building = building;
+
     }
     
     IEnumerator FadeImage(float t)

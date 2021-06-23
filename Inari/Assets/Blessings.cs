@@ -1,20 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn.Unity;
 
 public class Blessings : MonoBehaviour
 
 {
-    public int divinityBlessing;
+    /*public int divinityBlessing;
     public int fortuneBlessing;
     public int divinityCurse;
     public int fortuneCurse;
+    */
 
     public bool good;
 
     public GameHeader gameHeader;
 
-    public Person p;
+    public Building building;
+
+    public DialogueUI dialogueUI;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,18 +29,25 @@ public class Blessings : MonoBehaviour
 
     public void Blessing()
     {
-        //divinity inCrease is initially small. Shrine should 
-        gameHeader.divinity += divinityBlessing;
-        gameHeader.fortune += fortuneBlessing;
-        if (good){
+        //divinity inCrease is initialy small
+        Person person = building.personWhoLivesHere;
+        gameHeader.divinity += person.divinityBlessing;
+        gameHeader.fortune += person.fortuneBlessing;
+        if (person.faithfulCitizen){
             gameHeader.shrinePoints++;
         }
+        building.sleep();
+        dialogueUI.MarkLineComplete();
     }
 
     public void Curse()
     {
-        gameHeader.divinity += divinityCurse;
-        gameHeader.fortune += fortuneCurse;
+        Person person = building.personWhoLivesHere;
+        gameHeader.divinity += person.divinityCurse;
+        gameHeader.fortune += person.fortuneCurse;
+        building.sleep();
+        dialogueUI.MarkLineComplete();
+
     }
 
     // Update is called once per frame

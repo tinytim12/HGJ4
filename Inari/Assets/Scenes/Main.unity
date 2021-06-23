@@ -176,6 +176,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 98c38e67a6a43aa44b840e14646de1e5, type: 2}
   - {fileID: 11400000, guid: 07e960115674cdd42a1307d91be7f4a3, type: 2}
   day: 1
+  shrinePoints: 0
   dialogueRunner: {fileID: 532033668}
   dialogueUI: {fileID: 532033667}
   dialogueText: {fileID: 861131753}
@@ -514,6 +515,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   personWhoLivesHere: {fileID: 11400000, guid: b9d20c0203e53774cafc5a125e6a5790, type: 2}
+  divinityBlessing: 0
+  fortuneBlessing: 0
+  divinityCurse: 0
+  fortuneCurse: 0
+  sleepTime: 0
+  nodeList:
+  - One
+  - Two
+  - Three
+  faithfulCitizen: 0
 --- !u!1 &909717857
 GameObject:
   m_ObjectHideFlags: 0
@@ -1124,6 +1135,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   personWhoLivesHere: {fileID: 11400000, guid: b9d20c0203e53774cafc5a125e6a5790, type: 2}
+  divinityBlessing: 0
+  fortuneBlessing: 0
+  divinityCurse: 0
+  fortuneCurse: 0
+  sleepTime: 3
+  nodeList:
+  - One
+  - Two
+  - Three
+  faithfulCitizen: 0
 --- !u!114 &1343916269 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5935829475398715334, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
@@ -1214,6 +1235,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   personWhoLivesHere: {fileID: 11400000, guid: b9d20c0203e53774cafc5a125e6a5790, type: 2}
+  divinityBlessing: 0
+  fortuneBlessing: 0
+  divinityCurse: 0
+  fortuneCurse: 0
+  sleepTime: 0
+  nodeList:
+  - One
+  - Two
+  - Three
+  faithfulCitizen: 0
 --- !u!1 &1696844587 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5935829475857655956, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
@@ -1231,11 +1262,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bda9891d6f57c94294316d73ba9ce55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  divinityBlessing: 0
-  fortuneBlessing: 0
-  divinityCurse: 0
-  fortuneCurse: 0
+  good: 0
   gameHeader: {fileID: 0}
+  building: {fileID: 0}
+  dialogueUI: {fileID: 532033667}
 --- !u!1001 &1772279731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1315,6 +1345,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   personWhoLivesHere: {fileID: 11400000, guid: b9d20c0203e53774cafc5a125e6a5790, type: 2}
+  divinityBlessing: 0
+  fortuneBlessing: 0
+  divinityCurse: 0
+  fortuneCurse: 0
+  sleepTime: 0
+  nodeList:
+  - One
+  - Two
+  - Three
+  faithfulCitizen: 0
 --- !u!1001 &1776523289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1394,6 +1434,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   personWhoLivesHere: {fileID: 11400000, guid: b9d20c0203e53774cafc5a125e6a5790, type: 2}
+  divinityBlessing: 0
+  fortuneBlessing: 0
+  divinityCurse: 0
+  fortuneCurse: 0
+  sleepTime: 0
+  nodeList:
+  - One
+  - Two
+  - Three
+  faithfulCitizen: 0
 --- !u!1 &1782206442 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5935829474028046594, guid: 1724e417259db234cbdf70e82c56524a, type: 3}
@@ -1489,6 +1539,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   personWhoLivesHere: {fileID: 11400000, guid: b9d20c0203e53774cafc5a125e6a5790, type: 2}
+  divinityBlessing: 0
+  fortuneBlessing: 0
+  divinityCurse: 0
+  fortuneCurse: 0
+  sleepTime: 0
+  nodeList:
+  - One
+  - Two
+  - Three
+  faithfulCitizen: 0
 --- !u!4 &26847570472249232
 Transform:
   m_ObjectHideFlags: 0
