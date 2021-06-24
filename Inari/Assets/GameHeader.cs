@@ -9,11 +9,12 @@ public class GameHeader : MonoBehaviour
     public static GameHeader Instance;
     public delegate void OnDayChange(int newDay);
     public OnDayChange onDayChanged;
-    public float timeRemaining = 10;
+    public float timeRemaining;
     public Person narrator;
     public Person[] persons;
 
     public YarnProgram citizenDialogue;
+    public YarnProgram narratorDialogue;
 
     public int day;
     public int shrinePoints;
@@ -49,9 +50,13 @@ private void Awake()
     void Start()
     {
         dialogueRunner.Add(citizenDialogue);
+        dialogueRunnerNarrator.Add(narratorDialogue);
+
         onDayChanged += OnDayChanged;
 
         day = 1;
+
+        playNarrator("One");
         
     }
 
@@ -64,7 +69,7 @@ private void Awake()
             timeRemaining -= Time.deltaTime;
         }
 
-        if (timeRemaining < 10 && day == 2)
+        if (timeRemaining < 40 && day == 2)
         {
             day++;
             onDayChanged(day);
@@ -88,20 +93,29 @@ private void Awake()
 
     private void OnDayChanged(int newDay)
     {
+        //add person to empty building
+        List<Building> buildings = new List<Building>();
+        foreach (var building in FindObjectsOfType<Building>())
+        {
+            if(building.personWhoLivesHere == null)
+            {
+                buildings.Add(building);
+            }
+        }
+        
+        if(buildings.Count != 0)
+        {
+            Building randomBuilding = buildings[Random.Range(0, buildings.Count)];
+            Person p = persons[Random.Range(0, day)];
+            randomBuilding.Alert(p);
+        }
 
-        Building[] buildings = FindObjectsOfType<Building>();
-        if(buildings.Length == 0) return;
-
-        Building randomBuilding = buildings[Random.Range(0, buildings.Length)];
-        Person p = persons[Random.Range(0, day)];
-        randomBuilding.Alert(p);
+        
     }
 
-    public void playNarrator(Person person)
+    public void playNarrator(string line)
     {
-        dialogueRunnerNarrator.startNode = person.startNode;
-        dialogueRunnerNarrator.Add(person.dialogueRunnerScript);
-        dialogueRunnerNarrator.StartDialogue();
+        dialogueRunnerNarrator.StartDialogue(line);
         StartCoroutine(FadeImage(1));
 
     }
@@ -118,26 +132,30 @@ private void Awake()
     IEnumerator FadeImage(float t)
     {
         // fade from opaque to transparent
-   
+
         // loop over 1 second backwards
-        dialogueText.color = new Color(dialogueText.color.r, dialogueText.color.g, dialogueText.color.b, 0);
-        while (dialogueText.color.a < 1.0f)
+        dialogueTextNarrator.color = new Color(dialogueTextNarrator.color.r, dialogueTextNarrator.color.g, dialogueTextNarrator.color.b, 0);
+        while (dialogueTextNarrator.color.a < 1.0f)
         {
-            dialogueText.color = new Color(dialogueText.color.r, dialogueText.color.g, dialogueText.color.b, dialogueText.color.a + (Time.deltaTime / t));
+            dialogueTextNarrator.color = new Color(dialogueTextNarrator.color.r, dialogueTextNarrator.color.g, dialogueTextNarrator.color.b, dialogueTextNarrator.color.a + (Time.deltaTime / t));
             yield return null;
         }
 
         
         // fade from transparent to opaque
         yield return new WaitForSeconds(4);
-            // loop over 1 second
 
-        while (dialogueText.color.a > 0)
+        while (dialogueTextNarrator.color.a > 0)
         {
-            dialogueText.color = new Color(dialogueText.color.r, dialogueText.color.g, dialogueText.color.b, dialogueText.color.a - (Time.deltaTime / t));
+            dialogueTextNarrator.color = new Color(dialogueTextNarrator.color.r, dialogueTextNarrator.color.g, dialogueTextNarrator.color.b, dialogueTextNarrator.color.a - (Time.deltaTime / t));
             yield return null;
         }
-        dialogueUI.MarkLineComplete();
+        dialogueUINarrator.MarkLineComplete();
+        if (dialogueRunnerNarrator.IsDialogueRunning)
+        {
+            StartCoroutine(FadeImage(1));
+
+        }
     }
 
     

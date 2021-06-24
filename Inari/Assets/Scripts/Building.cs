@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
+
 public class Building : MonoBehaviour
 {
     public static Building buildingSelected;
     public Person personWhoLivesHere;
+
+
+    public GameObject icon;
 
     public int divinityBlessing;
     public int fortuneBlessing;
@@ -20,11 +24,17 @@ public class Building : MonoBehaviour
     public string[] nodeList = { "One", "Two", "Three" };
 
     public bool faithfulCitizen;
+
+    private void Start()
+    {
+        icon.SetActive(false);
+    }
     public void Alert(Person p)
     {
         personWhoLivesHere = p;
         string nodeName = p.startNode + "One";
         GameHeader.Instance.playCitizen(this, nodeName);
+        icon.SetActive(true);
     }
 
     void Update()
@@ -49,6 +59,7 @@ public class Building : MonoBehaviour
 
     public void sleep()
     {
+        icon.SetActive(false);
         awake = false;
         StartCoroutine(SleepCoroutine());
     }
@@ -59,6 +70,6 @@ public class Building : MonoBehaviour
         //yield on a new YieldInstruction that waits for 5 seconds.
         yield return new WaitForSeconds(sleepTime);
         awake = true;
-
+        icon.SetActive(true);
     }
 }
