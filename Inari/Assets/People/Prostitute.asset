@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863be061420de194293e784260d971a0, type: 3}
   m_Name: Prostitute
   m_EditorClassIdentifier: 
-  dialogueRunnerScripts:
-  - {fileID: 2480198943629176163, guid: 20c6ee3b452c554419b29cb150ad5e8b, type: 3}
-  startNode: 
+  dialogueRunnerScript: {fileID: 2480198943629176163, guid: 20c6ee3b452c554419b29cb150ad5e8b, type: 3}
+  startNode: Prostitute
   faithfulCitizen: 1
   divinityBlessing: 0
   fortuneBlessing: 0

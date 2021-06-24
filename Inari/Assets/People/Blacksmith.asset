@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863be061420de194293e784260d971a0, type: 3}
   m_Name: Blacksmith
   m_EditorClassIdentifier: 
-  dialogueRunnerScripts:
-  - {fileID: 2480198943629176163, guid: 72ed1ce593a59504da3426ec91c43d6a, type: 3}
-  startNode: 
+  dialogueRunnerScript: {fileID: 2480198943629176163, guid: 72ed1ce593a59504da3426ec91c43d6a, type: 3}
+  startNode: Blacksmith
   faithfulCitizen: 1
   divinityBlessing: 5
   fortuneBlessing: 5
