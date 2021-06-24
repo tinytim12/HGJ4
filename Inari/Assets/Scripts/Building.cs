@@ -32,9 +32,8 @@ public class Building : MonoBehaviour
     public void Alert(Person p)
     {
         personWhoLivesHere = p;
-        string nodeName = p.startNode + "One";
-        GameHeader.Instance.playCitizen(this, nodeName);
         icon.SetActive(true);
+        awake = true;
     }
 
     void Update()
@@ -47,6 +46,7 @@ public class Building : MonoBehaviour
         
         if (awake)
         {
+
             if (buildingSelected == this) return;
             Debug.Log("Selected");
             transform.DOPunchPosition(new Vector3(0, 0.2f, 0), 0.5f);

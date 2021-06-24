@@ -87,6 +87,21 @@ private void Awake()
         if(shrinePoints > 3)
         {
             //build shrine
+            List<Shrine> shrines = new List<Shrine>();
+            foreach (var shrine in FindObjectsOfType<Shrine>())
+            {
+                if (!shrine.built)
+                {
+                    shrines.Add(shrine);
+                }
+            }
+
+            
+            if (shrines.Count != 0)
+            {
+                Shrine randomShrine = shrines[Random.Range(0, shrines.Count)];
+                StartCoroutine(waitForShrine(randomShrine));
+            }
             shrinePoints = 0;
         }
     }
@@ -158,6 +173,13 @@ private void Awake()
         }
     }
 
-    
+    IEnumerator waitForShrine(Shrine shrine)
+    {
+        Debug.Log("Shrine building");
+        yield return new WaitForSeconds(5);
+        shrine.buildShrine();
+        Debug.Log("Shrine done");
+    }
+
 
 }
