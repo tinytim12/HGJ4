@@ -23,23 +23,28 @@ public class Building : MonoBehaviour
     public void Alert(Person p)
     {
         personWhoLivesHere = p;
-        GameHeader.Instance.playCitizen(this, "One");
+        string nodeName = p.startNode + "One";
+        GameHeader.Instance.playCitizen(this, nodeName);
     }
 
     void Update()
     {
-        if (awake)
-        {
-            GameHeader.Instance.playCitizen(this, nodeList[Random.Range(0, nodeList.Length)]);
-        }
+        
     }
 
     public void OnUserSelect()
     {
-        if(buildingSelected == this) return;
-
-        transform.DOPunchPosition(new Vector3(0, 0.2f, 0), 0.5f);
-        buildingSelected = this;
+        
+        if (awake)
+        {
+            if (buildingSelected == this) return;
+            Debug.Log("Selected");
+            transform.DOPunchPosition(new Vector3(0, 0.2f, 0), 0.5f);
+            buildingSelected = this;
+            string nodeName = personWhoLivesHere.startNode;
+            string nodeNo = nodeList[Random.Range(0, nodeList.Length)];
+            GameHeader.Instance.playCitizen(this, nodeName+nodeNo);
+        }
     }
 
     public void sleep()

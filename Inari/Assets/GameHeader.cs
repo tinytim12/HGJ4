@@ -13,6 +13,8 @@ public class GameHeader : MonoBehaviour
     public Person narrator;
     public Person[] persons;
 
+    public YarnProgram citizenDialogue;
+
     public int day;
     public int shrinePoints;
 
@@ -46,6 +48,7 @@ private void Awake()
 
     void Start()
     {
+        dialogueRunner.Add(citizenDialogue);
         onDayChanged += OnDayChanged;
 
         day = 1;
@@ -97,8 +100,7 @@ private void Awake()
     public void playNarrator(Person person)
     {
         dialogueRunnerNarrator.startNode = person.startNode;
-        dialogueRunnerNarrator.yarnScripts = person.dialogueRunnerScripts;
-        dialogueRunnerNarrator.Load();
+        dialogueRunnerNarrator.Add(person.dialogueRunnerScript);
         dialogueRunnerNarrator.StartDialogue();
         StartCoroutine(FadeImage(1));
 
@@ -107,9 +109,6 @@ private void Awake()
     public void playCitizen(Building building, string line)
     {
         Person person = building.personWhoLivesHere;
-        dialogueRunner.startNode = person.startNode;
-        dialogueRunner.yarnScripts = person.dialogueRunnerScripts;
-        dialogueRunner.Load();
         dialogueRunner.StartDialogue(line);
 
         blessings.building = building;

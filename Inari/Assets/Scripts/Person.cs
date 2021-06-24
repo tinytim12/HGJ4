@@ -8,7 +8,8 @@ using Yarn.Unity;
 [CreateAssetMenu()]
 public class Person : ScriptableObject
 {
-    public YarnProgram[] dialogueRunnerScripts;
+
+    public YarnProgram dialogueRunnerScript;
     public string startNode;
     public bool faithfulCitizen;
 
