@@ -31,7 +31,7 @@ public class Blessings : MonoBehaviour
     {
         //divinity inCrease is initialy small
         Person person = building.personWhoLivesHere;
-        gameHeader.divinity += person.divinityPoint;
+        gameHeader.hunger -= person.hungerPoint;
         gameHeader.fortune -= person.fortunePoint;
         if (person.faithfulCitizen){
             gameHeader.shrinePoints++;

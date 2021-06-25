@@ -29,8 +29,10 @@ public class GameHeader : MonoBehaviour
     public DialogueUI dialogueUINarrator;
     public Text dialogueTextNarrator;
 
-    public int divinity;
-    public int fortune;
+    public float hunger;
+    public float fortune;
+    public float maxHunger;
+    public float maxFortune;
 
     bool fading;
 
@@ -56,6 +58,11 @@ private void Awake()
         onDayChanged += OnDayChanged;
 
         day = 1;
+
+        hunger = 50;
+        fortune = 50;
+        maxHunger = 50;
+        maxFortune = 100;
 
         playNarrator("Start");
         playNarrator("Two");
@@ -88,7 +95,7 @@ private void Awake()
     {
         if(shrinePoints > 3)
         {
-            divinity += 10;
+            hunger -= 10;
             //build shrine
             List<Shrine> shrines = new List<Shrine>();
             foreach (var shrine in FindObjectsOfType<Shrine>())
@@ -110,7 +117,7 @@ private void Awake()
         }
         if(antiShrinePoints > 10)
         {
-            divinity -= 10;
+            hunger -= 10;
             List<Shrine> shrines = new List<Shrine>();
             foreach (var shrine in FindObjectsOfType<Shrine>())
             {
