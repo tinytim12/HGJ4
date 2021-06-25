@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cfc3a8c234e14b20b77061be69e91ea, type: 3}
+  m_Name: B14F440F-B387-418D-869B-943185B9FF71
+  m_EditorClassIdentifier: 
+  objectName: Curse
+  id: 2220766949
+  guid: B14F440F-B387-418D-869B-943185B9FF71

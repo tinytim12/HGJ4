@@ -11,7 +11,6 @@ public class Building : MonoBehaviour
 
 
     public GameObject icon;
-
     public int divinityBlessing;
     public int fortuneBlessing;
     public int divinityCurse;

@@ -14,6 +14,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Request" ID="{67251825-7DB4-44DB-B59B-1E69D6BC9170}">
+					<ChildrenList>
+						<Action Name="" ID="{48D37775-B222-4BA7-8EC4-B32AB9B6A014}" ShortID="965883732">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RequestCue" ID="{495AFAEB-0763-49DA-B7E4-44EE2EB6E557}" WorkUnitID="{F2918D93-4AF8-45D9-BABC-D43CE85D80D1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Shrine" ID="{B765F354-9505-4288-A7BB-F2B2549E6F13}">
+					<ChildrenList>
+						<Action Name="" ID="{83C582CA-275D-461F-BEEB-C89F2576995A}" ShortID="330791784">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Building_Complete" ID="{F8092D74-E95B-4B00-AE95-763C98D5B8C3}" WorkUnitID="{F2918D93-4AF8-45D9-BABC-D43CE85D80D1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Curse" ID="{B14F440F-B387-418D-869B-943185B9FF71}">
+					<ChildrenList>
+						<Action Name="" ID="{72544AE0-0BCE-409E-A2D0-82CC1CEB8E19}" ShortID="530330731">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Curse" ID="{4B716B84-798C-4C89-870C-7D3042E71E8B}" WorkUnitID="{F2918D93-4AF8-45D9-BABC-D43CE85D80D1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

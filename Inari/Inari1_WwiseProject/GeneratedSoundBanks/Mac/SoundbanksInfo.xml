@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>/Users/danielpark/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/InariGame/Inari1/Inari1_WwiseProject/</ProjectRoot>
-		<SourceFilesRoot>/Users/danielpark/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/InariGame/Inari1/Inari1_WwiseProject/.cache/Mac/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/danielpark/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/InariGame/Inari1/Inari1_WwiseProject/GeneratedSoundBanks/Mac/</SoundBanksRoot>
+		<ProjectRoot>/Users/danielpark/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/HGJ4/Inari/Inari1_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/danielpark/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/HGJ4/Inari/Inari1_WwiseProject/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/danielpark/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/HGJ4/Inari/Inari1_WwiseProject/GeneratedSoundBanks/Mac/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/danielpark/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/InariGame/Inari1/Inari1_WwiseProject/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/danielpark/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/HGJ4/Inari/Inari1_WwiseProject/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -16,16 +16,44 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2553055830">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3582749225">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3400219271" Name="AmbienceVillage" ObjectPath="\Events\Default Work Unit\AmbienceVillage" DurationType="OneShot" DurationMin="50.000000" DurationMax="50.000000">
+				<Event Id="3400219271" Name="AmbienceVillage" ObjectPath="\Events\Default Work Unit\AmbienceVillage" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="855901181" Language="SFX">
 							<ShortName>JapaneseVillageAmbience.wav</ShortName>
-							<Path>SFX/JapaneseVillageAmbience_10C4C929.wem</Path>
+							<Path>SFX/JapaneseVillageAmbience_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2220766949" Name="Curse" ObjectPath="\Events\Default Work Unit\Curse" DurationType="OneShot" DurationMin="1.551563" DurationMax="1.551563">
+					<IncludedMemoryFiles>
+						<File Id="823901913" Language="SFX">
+							<ShortName>Curse.wav</ShortName>
+							<Path>SFX/Curse_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2009905376" Name="Request" ObjectPath="\Events\Default Work Unit\Request" DurationType="OneShot" DurationMin="0.916435" DurationMax="1.095921">
+					<IncludedMemoryFiles>
+						<File Id="729272115" Language="SFX">
+							<ShortName>RequestCue2.wav</ShortName>
+							<Path>SFX/RequestCue2_10C4C929.wem</Path>
+						</File>
+						<File Id="740088379" Language="SFX">
+							<ShortName>RequestCue.wav</ShortName>
+							<Path>SFX/RequestCue_EBD3ECA9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="407166184" Name="Shrine" ObjectPath="\Events\Default Work Unit\Shrine" DurationType="OneShot" DurationMin="1.416667" DurationMax="1.416667">
+					<IncludedMemoryFiles>
+						<File Id="516408559" Language="SFX">
+							<ShortName>Building_Complete.wav</ShortName>
+							<Path>SFX/Building_Complete_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
