@@ -13,7 +13,7 @@ public class Person : ScriptableObject
     public string startNode;
     public bool faithfulCitizen;
 
-    public int divinityPoint;
+    public int hungerPoint;
     public int fortunePoint;
 
 
