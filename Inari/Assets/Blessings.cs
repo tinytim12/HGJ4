@@ -47,6 +47,10 @@ public class Blessings : MonoBehaviour
         gameHeader.fortune += person.fortuneCurse;
         building.sleep();
         dialogueUI.MarkLineComplete();
+        if (person.faithfulCitizen)
+        {
+            gameHeader.antiShrinePoints--;
+        }
 
     }
 

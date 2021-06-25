@@ -1,10 +1,53 @@
+title: BoyZero
+tags: 
+colorID: 0
+position: -9,-422
+---
+
+Hi there, Mr Fox! Did you see the necklace I dropped? I'll give you a treat if you find it.
+
+===
+
+title: BoyOne
+tags: 
+colorID: 0
+position: -9,-422
+---
+
+How are you doing, Mr Fox? For me, I caught a fish today. Do foxes eat that?
+
+===
+
+title: BoyTwo
+tags: 
+colorID: 0
+position: -9,-422
+---
+
+Hi again, Mr Fox. We had a party and there's some leftover clams. You can have a bite if you want.
+
+===
+
+title: BoyThree
+tags: 
+colorID: 0
+position: -9,-422
+---
+
+Thanks again for the other day, Mr Fox. My mom made some noodles for you. That necklace was her favourite. 
+
+===
+
+
+
 title: BlacksmithOne
 tags: 
 colorID: 0
 position: -9,-422
 ---
 
-I am Blacksmith 1 
+I pray to you, Inari-okami. Guide my hand in the crafting of the sword, and I will return with wine and meat.
+
 ===
 
 title: BlacksmithTwo
@@ -12,8 +55,8 @@ tags:
 colorID: 0
 position: -9,-42
 ---
+I pray to you, Inari-okami. Guide my hand in the smelting of the iron, and I will return with wine and meat.
 
-I am Blacksmith 2
 ===
 
 title: BlacksmithThree
@@ -22,7 +65,8 @@ colorID: 0
 position: -9,-4
 ---
 
-I am Blacksmith 3
+I pray to you, Inari-okami. Guide my hand in the forging of the steel, and I will return with wine and meat.
+
 ===
 
 title: ProstituteOne
@@ -31,7 +75,8 @@ colorID: 0
 position: -9,-422
 ---
 
-I am Prostitute 1
+Inari-sama, just rice is all I have to offer. Please let money flow into my pockets tonight.
+
 ===
 
 title: ProstituteTwo
@@ -40,7 +85,8 @@ colorID: 0
 position: -9,-42
 ---
 
-I am Prostitute 2
+Inari-sama, I hope rice is good enough for you. Please guard me from my stalker tonight.
+
 ===
 
 title: ProstituteThree
@@ -49,7 +95,8 @@ colorID: 0
 position: -9,-4
 ---
 
-I am Prostitute 3
+Inari-sama, do you like rice? Please shield me from the Madam's wrath tonight.
+
 ===
 
 title: FishermanOne
@@ -58,7 +105,8 @@ colorID: 0
 position: -9,-422
 ---
 
-I am a Fisherman 1
+Nice to meet you, O-Inari. If you would guide the shrimp into my nets today, I can share some with you.
+
 ===
 
 title: FishermanTwo
@@ -67,7 +115,8 @@ colorID: 0
 position: -9,-42
 ---
 
-I am a Fisherman 2
+This is a first time I've seen an O-Inari. Have you tried whale meat before? If we work together, we can spear one today.
+
 ===
 
 title: FishermanThree
@@ -76,6 +125,97 @@ colorID: 0
 position: -9,-4
 ---
 
-I am a Fisherman 3
+I hope I'm not intruding, O-Inari. I would offer you a plate of octopus, if you could help me harvest some today.
+
+===
+
+title: ThiefOne
+tags: 
+colorID: 0
+position: -9,-422
+---
+
+Oh great Inari-sama, I pledge my life to you. Please soften my footsteps when I do tonight's work.
+
+===
+
+title: ThiefTwo
+tags: 
+colorID: 0
+position: -9,-42
+---
+
+Your greatness knows no bounds, Inari-sama. I dedicate my life to you. Please strengthen my lockpicks for tonight's work.
+
+===
+
+title: ThiefThree
+tags: 
+colorID: 0
+position: -9,-4
+---
+
+I am unworthy before you, Inari-sama. My life is your possession. Please darken my shadow for tonight's work.
+
+===
+
+title: NoblemanOne
+tags: 
+colorID: 0
+position: -9,-422
+---
+
+Hey, fox. I've got the finest sake in the whole town. Just make the Minister's wife fall in love with me and it's yours.
+
+===
+
+title: NoblemanTwo
+tags: 
+colorID: 0
+position: -9,-42
+---
+
+Are you the magical fox? Make the merchants delivery go faster. Hundred thousand yen sake for you if you do.
+
+===
+
+title: NoblemanThree
+tags: 
+colorID: 0
+position: -9,-4
+---
+
+Fox, grant my wish. Make all the town come to my party tonight. We'll let you taste our premium cured sake if you do.
+
+===
+
+title: WesternerOne
+tags: 
+colorID: 0
+position: -9,-422
+---
+
+This is really interesting. A fox that grants wishes. Could you grant mine? Just to test.
+
+===
+
+title: WesternerTwo
+tags: 
+colorID: 0
+position: -9,-42
+---
+
+This country's customs are amazing. Giving free food to ghosts! Are you really as magical as they say?
+
+===
+
+title: WesternerThree
+tags: 
+colorID: 0
+position: -9,-4
+---
+
+The women here are beautiful. Think you could let me bed one of them? Is that how this works?
+
 ===
 

@@ -1,4 +1,4 @@
-title: One
+title: Start
 tags: 
 colorID: 0
 position: -9,-424
@@ -10,15 +10,66 @@ position: -9,-424
 
 ===
 
-title: Two
+title: Bless
 tags: 
 colorID: 0
 position: -9,-424
 ---
-
-
-    Good fortune blows towards me for only so long.
-    I'll can get my good luck back somehow, if I curse them.
+    Blessings would guide the winds of good fortune towards them.
+    Eventually, I will have to guide it back to me.
+    
 
 ===
 
+title: Curse
+tags: 
+colorID: 0
+position: -9,-424
+---
+    Curses would guide the winds of good fortune away from them.
+    And back towards me, but I wonder at what cost?
+
+===
+
+title: Shrine
+tags: 
+colorID: 0
+position: -9,-424
+---
+    The humans have erected a shrine in my honour.
+    They now bless me with more offerings...I should continue rewarding them.
+
+===
+
+
+title: ShrineDestroy
+tags: 
+colorID: 0
+position: -9,-424
+---
+    Some angry humans have destroyed my shrine.
+    I must have unknowingly displeased some of my faithful followers.
+    
+
+===
+
+title: Warning
+tags: 
+colorID: 0
+position: -9,-424
+---
+    Some humans make huge promises to me. 
+    But when my backs is turned their faith disappears. 
+    I should watch out for them.
+
+===
+
+title: ShrineTwo
+tags: 
+colorID: 0
+position: -9,-424
+---
+    With every shrine built, their faith grows and my stomach fills.
+    A few more shrines, and my hunger wil be sated.
+
+===

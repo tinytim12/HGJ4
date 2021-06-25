@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 863be061420de194293e784260d971a0, type: 3}
-  m_Name: Blacksmith
+  m_Name: Boy
   m_EditorClassIdentifier: 
   dialogueRunnerScript: {fileID: 0}
-  startNode: Blacksmith
+  startNode: 
   faithfulCitizen: 1
-  divinityBlessing: 5
-  fortuneBlessing: 5
-  divinityCurse: 5
-  fortuneCurse: 5
+  divinityBlessing: 0
+  fortuneBlessing: 0
+  divinityCurse: 0
+  fortuneCurse: 0

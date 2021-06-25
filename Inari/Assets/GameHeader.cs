@@ -18,6 +18,7 @@ public class GameHeader : MonoBehaviour
 
     public int day;
     public int shrinePoints;
+    public int antiShrinePoints;
 
     public DialogueRunner dialogueRunner;
     public DialogueUI dialogueUI;
@@ -56,7 +57,7 @@ private void Awake()
 
         day = 1;
 
-        playNarrator("One");
+        playNarrator("Start");
         playNarrator("Two");
         
     }
@@ -87,6 +88,7 @@ private void Awake()
     {
         if(shrinePoints > 3)
         {
+            divinity += 10;
             //build shrine
             List<Shrine> shrines = new List<Shrine>();
             foreach (var shrine in FindObjectsOfType<Shrine>())
@@ -94,6 +96,7 @@ private void Awake()
                 if (!shrine.built)
                 {
                     shrines.Add(shrine);
+                    
                 }
             }
 
@@ -101,7 +104,27 @@ private void Awake()
             if (shrines.Count != 0)
             {
                 Shrine randomShrine = shrines[Random.Range(0, shrines.Count)];
-                StartCoroutine(waitForShrine(randomShrine));
+                StartCoroutine(waitForShrine(randomShrine, true));
+            }
+            shrinePoints = 0;
+        }
+        if(antiShrinePoints > 10)
+        {
+            divinity -= 10;
+            List<Shrine> shrines = new List<Shrine>();
+            foreach (var shrine in FindObjectsOfType<Shrine>())
+            {
+                if (shrine.built)
+                {
+                    shrines.Add(shrine);
+                }
+            }
+
+
+            if (shrines.Count != 0)
+            {
+                Shrine randomShrine = shrines[Random.Range(0, shrines.Count)];
+                StartCoroutine(waitForShrine(randomShrine, false));
             }
             shrinePoints = 0;
         }
@@ -175,12 +198,19 @@ private void Awake()
         }
     }
 
-    IEnumerator waitForShrine(Shrine shrine)
+    IEnumerator waitForShrine(Shrine shrine, bool building)
     {
         Debug.Log("Shrine building");
         yield return new WaitForSeconds(5);
-        shrine.buildShrine();
-        Debug.Log("Shrine done");
+        if (building)
+        {
+            shrine.buildShrine();
+        }
+        else
+        {
+            shrine.destroyShrine();
+        }
+
     }
 
     IEnumerator waitforDialogueNarrator(string line)

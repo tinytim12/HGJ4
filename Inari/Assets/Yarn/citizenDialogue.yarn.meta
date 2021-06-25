@@ -10,7 +10,28 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
   baseLanguageID: en-SG
   stringIDs:
-  - BlackSmith-Monologue-0
+  - citizenDialogue-BoyZero-0
+  - citizenDialogue-BoyOne-1
+  - citizenDialogue-BoyTwo-2
+  - citizenDialogue-BoyThree-3
+  - citizenDialogue-BlacksmithOne-4
+  - citizenDialogue-BlacksmithTwo-5
+  - citizenDialogue-BlacksmithThree-6
+  - citizenDialogue-ProstituteOne-7
+  - citizenDialogue-ProstituteTwo-8
+  - citizenDialogue-ProstituteThree-9
+  - citizenDialogue-FishermanOne-10
+  - citizenDialogue-FishermanTwo-11
+  - citizenDialogue-FishermanThree-12
+  - citizenDialogue-ThiefOne-13
+  - citizenDialogue-ThiefTwo-14
+  - citizenDialogue-ThiefThree-15
+  - citizenDialogue-NoblemanOne-16
+  - citizenDialogue-NoblemanTwo-17
+  - citizenDialogue-NoblemanThree-18
+  - citizenDialogue-WesternerOne-19
+  - citizenDialogue-WesternerTwo-20
+  - citizenDialogue-WesternerThree-21
   compilationStatus: 1
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 

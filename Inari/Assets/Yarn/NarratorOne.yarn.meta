@@ -10,7 +10,21 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
   baseLanguageID: en-SG
   stringIDs:
-  - Westerner-Monologue-0
+  - NarratorOne-Start-0
+  - NarratorOne-Start-1
+  - NarratorOne-Bless-2
+  - NarratorOne-Bless-3
+  - NarratorOne-Curse-4
+  - NarratorOne-Curse-5
+  - NarratorOne-Shrine-6
+  - NarratorOne-Shrine-7
+  - NarratorOne-ShrineDestroy-8
+  - NarratorOne-ShrineDestroy-9
+  - NarratorOne-Warning-10
+  - NarratorOne-Warning-11
+  - NarratorOne-Warning-12
+  - NarratorOne-ShrineTwo-13
+  - NarratorOne-ShrineTwo-14
   compilationStatus: 1
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
