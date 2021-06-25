@@ -15,7 +15,5 @@ MonoBehaviour:
   dialogueRunnerScript: {fileID: 0}
   startNode: Blacksmith
   faithfulCitizen: 1
-  divinityBlessing: 5
-  fortuneBlessing: 5
-  divinityCurse: 5
-  fortuneCurse: 5
+  divinityPoint: 2
+  fortunePoint: 2

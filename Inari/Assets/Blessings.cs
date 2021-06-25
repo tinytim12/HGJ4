@@ -31,8 +31,8 @@ public class Blessings : MonoBehaviour
     {
         //divinity inCrease is initialy small
         Person person = building.personWhoLivesHere;
-        gameHeader.divinity += person.divinityBlessing;
-        gameHeader.fortune += person.fortuneBlessing;
+        gameHeader.divinity += person.divinityPoint;
+        gameHeader.fortune -= person.fortunePoint;
         if (person.faithfulCitizen){
             gameHeader.shrinePoints++;
         }
@@ -43,8 +43,7 @@ public class Blessings : MonoBehaviour
     public void Curse()
     {
         Person person = building.personWhoLivesHere;
-        gameHeader.divinity += person.divinityCurse;
-        gameHeader.fortune += person.fortuneCurse;
+        gameHeader.fortune += person.fortunePoint;
         building.sleep();
         dialogueUI.MarkLineComplete();
         if (person.faithfulCitizen)
