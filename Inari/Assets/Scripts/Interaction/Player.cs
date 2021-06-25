@@ -6,12 +6,12 @@ using System.Linq;
 
 public class Player : MonoBehaviour
 {
-    public DialogueRunner[] dialogueRunner;
+    public DialogueRunner dialogueRunner;
     private void Update()
     {
         if(Input.GetMouseButtonDown(0))
         {
-            if(dialogueRunner.Any(x => x.IsDialogueRunning)) return;
+            if(dialogueRunner.IsDialogueRunning) return;
 
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 

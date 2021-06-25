@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44123366, g: 0.49001926, b: 0.5700803, a: 1}
+  m_IndirectSpecularColor: {r: 0.44123018, g: 0.4900155, b: 0.5700767, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -635,14 +635,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d9a32a0ef595334fb4fdf643207b772, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 10
+  timeRemaining: 50
   narrator: {fileID: 11400000, guid: b9d20c0203e53774cafc5a125e6a5790, type: 2}
   persons:
   - {fileID: 11400000, guid: b9d20c0203e53774cafc5a125e6a5790, type: 2}
   - {fileID: 11400000, guid: 98c38e67a6a43aa44b840e14646de1e5, type: 2}
   - {fileID: 11400000, guid: 07e960115674cdd42a1307d91be7f4a3, type: 2}
   citizenDialogue: {fileID: 2480198943629176163, guid: 72ed1ce593a59504da3426ec91c43d6a, type: 3}
-  narratorDialogue: {fileID: 2480198943629176163, guid: 6fe53b8fd5af3694686a6d48d84170fb, type: 3}
+  narratorDialogue: {fileID: 2480198943629176163, guid: d58e2f3b032626a48bdc5d15e4837b1d, type: 3}
   day: 1
   shrinePoints: 0
   dialogueRunner: {fileID: 532033668}
@@ -1293,9 +1293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f9c8bcf172b5a944952e83c74c2b1cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueRunner:
-  - {fileID: 198015176}
-  - {fileID: 532033668}
+  dialogueRunner: {fileID: 532033668}
 --- !u!114 &693976049
 MonoBehaviour:
   m_ObjectHideFlags: 0

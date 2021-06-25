@@ -31,7 +31,7 @@ public class GameHeader : MonoBehaviour
     public int divinity;
     public int fortune;
 
-    
+    bool fading;
 
 private void Awake()
     {
@@ -57,6 +57,7 @@ private void Awake()
         day = 1;
 
         playNarrator("One");
+        playNarrator("Two");
         
     }
 
@@ -130,8 +131,8 @@ private void Awake()
 
     public void playNarrator(string line)
     {
-        dialogueRunnerNarrator.StartDialogue(line);
-        StartCoroutine(FadeImage(1));
+        StartCoroutine(waitforDialogueNarrator(line));
+
 
     }
 
@@ -147,7 +148,7 @@ private void Awake()
     IEnumerator FadeImage(float t)
     {
         // fade from opaque to transparent
-
+        fading = true;
         // loop over 1 second backwards
         dialogueTextNarrator.color = new Color(dialogueTextNarrator.color.r, dialogueTextNarrator.color.g, dialogueTextNarrator.color.b, 0);
         while (dialogueTextNarrator.color.a < 1.0f)
@@ -165,6 +166,7 @@ private void Awake()
             dialogueTextNarrator.color = new Color(dialogueTextNarrator.color.r, dialogueTextNarrator.color.g, dialogueTextNarrator.color.b, dialogueTextNarrator.color.a - (Time.deltaTime / t));
             yield return null;
         }
+        fading = false;
         dialogueUINarrator.MarkLineComplete();
         if (dialogueRunnerNarrator.IsDialogueRunning)
         {
@@ -180,6 +182,23 @@ private void Awake()
         shrine.buildShrine();
         Debug.Log("Shrine done");
     }
+
+    IEnumerator waitforDialogueNarrator(string line)
+    {
+        //Cutscene Stuff
+        Debug.Log("Waiting");
+
+        while (dialogueRunnerNarrator.IsDialogueRunning || fading)
+        {
+
+            yield return null;
+        }
+        //More Cutscene Stuff and End the cutscene
+        Debug.Log("dialogue cued");
+        dialogueRunnerNarrator.StartDialogue(line);
+        StartCoroutine(FadeImage(1));
+    }
+
 
 
 }
