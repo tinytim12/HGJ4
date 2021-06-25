@@ -115,7 +115,7 @@ colorID: 0
 position: -9,-42
 ---
 
-This is a first time I've seen an O-Inari. Have you tried whale meat before? If we work together, we can spear one today.
+This is a first time I've seen an O-Inari. Have you tried tun abefore? If we work together, we can catch some today.
 
 ===
 
@@ -159,7 +159,7 @@ I am unworthy before you, Inari-sama. My life is your possession. Please darken 
 
 ===
 
-title: NoblemanOne
+title: WesternerOne
 tags: 
 colorID: 0
 position: -9,-422
@@ -169,7 +169,7 @@ Hey, fox. I've got the finest sake in the whole town. Just make the Minister's w
 
 ===
 
-title: NoblemanTwo
+title: WesternerTwo
 tags: 
 colorID: 0
 position: -9,-42
@@ -179,7 +179,7 @@ Are you the magical fox? Make the merchants delivery go faster. Hundred thousand
 
 ===
 
-title: NoblemanThree
+title: WesternerThree
 tags: 
 colorID: 0
 position: -9,-4
@@ -189,33 +189,34 @@ Fox, grant my wish. Make all the town come to my party tonight. We'll let you ta
 
 ===
 
-title: WesternerOne
+title: NoblemanOne
 tags: 
 colorID: 0
 position: -9,-422
 ---
 
-This is really interesting. A fox that grants wishes. Could you grant mine? Just to test.
+The Shogun has requested you to bless his vacation to the North. Payment will be made in tuna belly and polished rice.
 
 ===
 
-title: WesternerTwo
+title: NoblemanTwo
 tags: 
 colorID: 0
 position: -9,-42
 ---
 
-This country's customs are amazing. Giving free food to ghosts! Are you really as magical as they say?
+The Shogun has requested you to bless his son's coronation. Payment will be made in clam soup with buckwheat noodles.
+
 
 ===
 
-title: WesternerThree
+title: NoblemanThree
 tags: 
 colorID: 0
 position: -9,-4
 ---
 
-The women here are beautiful. Think you could let me bed one of them? Is that how this works?
+The Shogun has requested you to bless his palace. Payment will be made in stewed whale meat with seaweed.
 
 ===
 

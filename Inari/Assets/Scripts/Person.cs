@@ -13,10 +13,9 @@ public class Person : ScriptableObject
     public string startNode;
     public bool faithfulCitizen;
 
-    public int divinityBlessing;
-    public int fortuneBlessing;
-    public int divinityCurse;
-    public int fortuneCurse;
+    public int divinityPoint;
+    public int fortunePoint;
+
 
     GameHeader gameHeader;
    
