@@ -16,6 +16,7 @@ public class Building : MonoBehaviour
     public int fortuneBlessing;
     public int divinityCurse;
     public int fortuneCurse;
+    public Vector3 requestIconPosition = new Vector3(-0.583f, 2.42f, 0);
 
     bool awake;
 
@@ -24,32 +25,39 @@ public class Building : MonoBehaviour
     public string[] nodeList = { "One", "Two", "Three" };
 
     public bool faithfulCitizen;
+    private GameObject _icon;
 
     private void Start()
     {
-        icon.SetActive(false);
+        _icon = Instantiate(icon, transform);
+        _icon.transform.localPosition = requestIconPosition;
+        _icon.SetActive(false);
     }
+
+    private void Update()
+    {
+        // slowly move icon up and down
+        _icon.transform.Translate(0, Mathf.Sin(Time.time * 2f) * 0.006f, 0, Space.Self);
+    }
+
+
     public void Alert(Person p)
     {
         personWhoLivesHere = p;
-        icon.SetActive(true);
+        _icon.SetActive(true);
         awake = true;
-    }
-
-    void Update()
-    {
-        
     }
 
     public void OnUserSelect()
     {
-        
         if (awake)
         {
-
             if (buildingSelected == this) return;
+
             Debug.Log("Selected");
+            
             transform.DOPunchPosition(new Vector3(0, 0.2f, 0), 0.5f);
+            
             buildingSelected = this;
             string nodeName = personWhoLivesHere.startNode;
             string nodeNo = nodeList[Random.Range(0, nodeList.Length)];
@@ -59,7 +67,7 @@ public class Building : MonoBehaviour
 
     public void sleep()
     {
-        icon.SetActive(false);
+        _icon.SetActive(false);
         awake = false;
         StartCoroutine(SleepCoroutine());
     }
@@ -70,6 +78,6 @@ public class Building : MonoBehaviour
         //yield on a new YieldInstruction that waits for 5 seconds.
         yield return new WaitForSeconds(sleepTime);
         awake = true;
-        icon.SetActive(true);
+        _icon.SetActive(true);
     }
 }
