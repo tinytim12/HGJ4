@@ -18,7 +18,7 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-13</Value>
+										<Value>-15</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -42,6 +42,42 @@
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="JapaneseVillageAmbience" ID="{E27E9E66-0D73-4692-B378-582955B0DFF7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="RiverAmbience" ID="{99990A66-EA2F-4AED-A554-DFA671EFCD24}" ShortID="576515100">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Ambience" ID="{29B45726-11A7-4C63-8537-242A4AAA9BC8}" WorkUnitID="{C9115BEF-FA24-4617-961C-3A04A00C7FB5}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B4684270-B54A-4F25-B0EF-6141DD1A421B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E1201C3C-29A4-41E2-9BC4-B8A833C5B517}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="RiverAmbience" ID="{568C162C-F0E5-4FAC-954D-7775FFFDBBCC}">
+									<Language>SFX</Language>
+									<AudioFile>RiverAmbience.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="222757210"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="RiverAmbience" ID="{568C162C-F0E5-4FAC-954D-7775FFFDBBCC}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

@@ -9,6 +9,7 @@
 						<ObjectRef Name="Shrine" ID="{B765F354-9505-4288-A7BB-F2B2549E6F13}" WorkUnitID="{DD0AE42B-1F54-4868-BF73-5B323FAE711C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AmbienceVillage" ID="{7FD784EA-A9A8-440F-8DE9-1AE14FC34F2B}" WorkUnitID="{DD0AE42B-1F54-4868-BF73-5B323FAE711C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Request" ID="{67251825-7DB4-44DB-B59B-1E69D6BC9170}" WorkUnitID="{DD0AE42B-1F54-4868-BF73-5B323FAE711C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="River" ID="{1941FE06-53B2-4C66-9C92-429865029E52}" WorkUnitID="{DD0AE42B-1F54-4868-BF73-5B323FAE711C}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

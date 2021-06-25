@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3582749225">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2731149148">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -46,6 +46,14 @@
 						<File Id="740088379" Language="SFX">
 							<ShortName>RequestCue.wav</ShortName>
 							<Path>SFX/RequestCue_EBD3ECA9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3605787649" Name="River" ObjectPath="\Events\Default Work Unit\River" MaxAttenuation="25.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="222757210" Language="SFX">
+							<ShortName>RiverAmbience.wav</ShortName>
+							<Path>SFX/RiverAmbience_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

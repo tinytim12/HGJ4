@@ -47,6 +47,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="River" ID="{1941FE06-53B2-4C66-9C92-429865029E52}">
+					<ChildrenList>
+						<Action Name="" ID="{CF4157C7-5EBC-42D9-AA64-B2660E47E606}" ShortID="842994842">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RiverAmbience" ID="{99990A66-EA2F-4AED-A554-DFA671EFCD24}" WorkUnitID="{F2918D93-4AF8-45D9-BABC-D43CE85D80D1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

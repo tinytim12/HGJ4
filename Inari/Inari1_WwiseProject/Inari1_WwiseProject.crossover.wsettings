@@ -4,6 +4,7 @@
 		<UserProjectSettings Name="" ID="{53602ED9-820A-4DCE-A423-0A8A7AA61872}">
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Desktop\InariGame\"/>
+				<Property Name="Event Action List\{1941FE06-53B2-4C66-9C92-429865029E52}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{67251825-7DB4-44DB-B59B-1E69D6BC9170}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7FD784EA-A9A8-440F-8DE9-1AE14FC34F2B}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B14F440F-B387-418D-869B-943185B9FF71}\x64_Expand States" Type="string" Value=""/>

@@ -3,8 +3,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	2009905376	Request			\Default Work Unit\Request	
 	2220766949	Curse			\Default Work Unit\Curse	
 	3400219271	AmbienceVillage			\Default Work Unit\AmbienceVillage	
+	3605787649	River			\Default Work Unit\River	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	222757210	RiverAmbience	Y:\Documents\GitHub\HGJ4\Inari\Inari1_WwiseProject\.cache\Windows\SFX\RiverAmbience_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbienceVillage\RiverAmbience		6720144
 	516408559	Building_Complete	Y:\Documents\GitHub\HGJ4\Inari\Inari1_WwiseProject\.cache\Windows\SFX\Building_Complete_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shrine\Building_Complete		272144
 	729272115	RequestCue2	Y:\Documents\GitHub\HGJ4\Inari\Inari1_WwiseProject\.cache\Windows\SFX\RequestCue2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\RequestCue\RequestCue2		208192
 	740088379	RequestCue	Y:\Documents\GitHub\HGJ4\Inari\Inari1_WwiseProject\.cache\Windows\SFX\RequestCue_EBD3ECA9.wem		\Actor-Mixer Hierarchy\Default Work Unit\RequestCue\RequestCue		534064
