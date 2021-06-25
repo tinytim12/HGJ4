@@ -641,10 +641,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b9d20c0203e53774cafc5a125e6a5790, type: 2}
   - {fileID: 11400000, guid: 98c38e67a6a43aa44b840e14646de1e5, type: 2}
   - {fileID: 11400000, guid: 07e960115674cdd42a1307d91be7f4a3, type: 2}
+  - {fileID: 11400000, guid: 2c32c3d2b55a433499916c4d4ac8328e, type: 2}
+  - {fileID: 11400000, guid: 6df0562e1de16ca48a7ca9cbd2bb5310, type: 2}
+  - {fileID: 11400000, guid: 217d913a8f0b1004fb3dc8a29d902152, type: 2}
+  - {fileID: 11400000, guid: 5d4772c7fc5969644b967fa5e397346e, type: 2}
   citizenDialogue: {fileID: 2480198943629176163, guid: 72ed1ce593a59504da3426ec91c43d6a, type: 3}
   narratorDialogue: {fileID: 2480198943629176163, guid: d58e2f3b032626a48bdc5d15e4837b1d, type: 3}
   day: 1
   shrinePoints: 0
+  antiShrinePoints: 0
   dialogueRunner: {fileID: 532033668}
   dialogueUI: {fileID: 532033667}
   dialogueText: {fileID: 861131753}

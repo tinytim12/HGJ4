@@ -23,4 +23,11 @@ public class Shrine : MonoBehaviour
         shrine.SetActive(true);
         built = true;
     }
+
+    public void destroyShrine()
+    {
+        GameObject shrine = gameObject.transform.GetChild(0).gameObject;
+        shrine.SetActive(false);
+        built = false;
+    }
 }
