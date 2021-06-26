@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44122994, g: 0.49001503, b: 0.57007605, a: 1}
+  m_IndirectSpecularColor: {r: 0.44123018, g: 0.4900155, b: 0.5700767, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -288,7 +288,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.70941144, y: 0.27860418}
   m_AnchorMax: {x: 0.97300005, y: 0.43750003}
-  m_AnchoredPosition: {x: 2, y: 1}
+  m_AnchoredPosition: {x: -620, y: 197}
   m_SizeDelta: {x: -12.06311, y: -10.468002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &113678756
@@ -807,7 +807,7 @@ MonoBehaviour:
   hunger: 30
   fortune: 10
   maxHunger: 30
-  maxFortune: 20
+  maxFortune: 10
   firstBlessed: 0
   firstCursed: 0
   firstShrineBuilt: 0

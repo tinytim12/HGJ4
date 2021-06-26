@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Westerner
   m_EditorClassIdentifier: 
   dialogueRunnerScript: {fileID: 0}
-  startNode: 
+  startNode: Westerner
   faithfulCitizen: 0
   hungerPoint: 5
   fortunePoint: 2
