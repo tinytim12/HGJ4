@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 863be061420de194293e784260d971a0, type: 3}
-  m_Name: Westerner
+  m_Name: Officer
   m_EditorClassIdentifier: 
   dialogueRunnerScript: {fileID: 0}
-  startNode: Westerner
+  startNode: Officer
   faithfulCitizen: 0
-  hungerPoint: 5
+  hungerPoint: 4
   fortunePoint: 2

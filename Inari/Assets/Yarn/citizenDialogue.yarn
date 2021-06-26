@@ -149,43 +149,13 @@ Thief: I am unworthy before you, Inari-sama. My life is your possession. Please 
 
 ===
 
-title: WesternerOne
-tags: 
-colorID: 0
-position: -9,-422
----
-
-Westerner: Hey, fox. I've got the finest sake in the whole town. Just make the Minister's wife fall in love with me and it's yours.
-
-===
-
-title: WesternerTwo
-tags: 
-colorID: 0
-position: -9,-42
----
-
-Westerner: Are you the magical fox? Make the merchants delivery go faster. Hundred thousand yen sake for you if you do.
-
-===
-
-title: WesternerThree
-tags: 
-colorID: 0
-position: -9,-4
----
-
-Westerner: Fox, grant my wish. Make all the town come to my party tonight. We'll let you taste our premium cured sake if you do.
-
-===
-
 title: NoblemanOne
 tags: 
 colorID: 0
 position: -9,-422
 ---
 
-Nobleman: The Shogun has requested you to bless his vacation to the North. Payment will be made in tuna belly and polished rice.
+Nobleman: Hey, fox. I've got the finest sake in the whole town. Just make the Minister's wife fall in love with me and it's yours.
 
 ===
 
@@ -195,7 +165,7 @@ colorID: 0
 position: -9,-42
 ---
 
-Nobleman: The Shogun has requested you to bless his son's coronation. Payment will be made in clam soup with buckwheat noodles.
+Nobleman: Are you the magical fox? Make the merchants delivery go faster. Hundred thousand yen sake for you if you do.
 
 ===
 
@@ -205,7 +175,37 @@ colorID: 0
 position: -9,-4
 ---
 
-Nobleman: The Shogun has requested you to bless his palace. Payment will be made in stewed whale meat with seaweed.
+Nobleman: Fox, grant my wish. Make all the town come to my party tonight. We'll let you taste our premium cured sake if you do.
+
+===
+
+title: OfficerOne
+tags: 
+colorID: 0
+position: -9,-422
+---
+
+Officer: The Shogun has requested you to bless his vacation to the North. Payment will be made in tuna belly and polished rice.
+
+===
+
+title: OfficerTwo
+tags: 
+colorID: 0
+position: -9,-42
+---
+
+Officer: The Shogun has requested you to bless his son's coronation. Payment will be made in clam soup with buckwheat noodles.
+
+===
+
+title: OfficerThree
+tags: 
+colorID: 0
+position: -9,-4
+---
+
+Officer: The Shogun has requested you to bless his palace. Payment will be made in stewed whale meat with seaweed.
 
 ===
 
