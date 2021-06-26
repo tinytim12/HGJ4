@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 7057fb797341da4291e249e44b1f5daf
     GuidInternal: 
-    m_lastTime: -8585769203004775808
+    m_lastTime: -8585768660764775808
     List:
     - name: Main
       guid: a8d2318c392588469bd3a28cdf7dfa20
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 88af5f0f36b5604996d90a9e09e6f1e8
     GuidInternal: 
-    m_lastTime: -8585769203044775808
+    m_lastTime: -8585768656044775808
     List:
     - name: Curse
       guid: b4e11f6d1dcceb4c84dbc297ce60c532
@@ -147,6 +147,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Shrine_Complete
+      guid: aa6575fb903dc943a0f44cdd67777fb9
+      id: 3353936342
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 88af5f0f36b5604996d90a9e09e6f1e8
+      - ElementName: Shrine_Complete
+        ObjectType: 3
+        guid: aa6575fb903dc943a0f44cdd67777fb9
+      Path: Events/Default Work Unit/Shrine_Complete
+      maxAttenuation: 0
+      maxDuration: 2.0625
+      minDuration: 2.0625
     - name: VillageAmbience
       guid: 8cf51a7af50b774f8a4f3751031fcd10
       id: 2830736011
@@ -221,7 +238,7 @@ MonoBehaviour:
     m_lastTime: -8585769225794775808
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000070000000c0000000d0000000e0000000f0000003400000035000000
+  ExpandedWaapiItemIds: 0100000005000000070000000c0000000d0000000e0000000f0000002d0000002e00000034000000350000003700000038000000430000004400000056000000570000005f00000060000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

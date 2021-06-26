@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{8C31D2A8-2539-4688-9BD3-A28CDF7DFA20}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Shrine_Complete" ID="{FB7565AA-3D90-43C9-A0F4-4CDD67777FB9}" WorkUnitID="{0F5FAF88-B536-4960-96D9-0A9E09E6F1E8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RiverAmbience" ID="{51A94632-7689-44D8-A8B0-E4AC449815AA}" WorkUnitID="{0F5FAF88-B536-4960-96D9-0A9E09E6F1E8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RequestCue" ID="{7095817E-06E2-492A-B447-71C901E63384}" WorkUnitID="{0F5FAF88-B536-4960-96D9-0A9E09E6F1E8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Curse" ID="{6D1FE1B4-CC1D-4CEB-84DB-C297CE60C532}" WorkUnitID="{0F5FAF88-B536-4960-96D9-0A9E09E6F1E8}" Origin="Manual" Filter="7"/>
