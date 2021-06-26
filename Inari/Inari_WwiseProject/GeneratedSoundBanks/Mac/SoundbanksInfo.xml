@@ -16,24 +16,40 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3221694485">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1008695950">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1570418421" Name="RiverAmbience" ObjectPath="\Events\Default Work Unit\RiverAmbience" DurationType="OneShot" DurationMin="35.000000" DurationMax="35.000000">
+				<Event Id="2220766949" Name="Curse" ObjectPath="\Events\Default Work Unit\Curse" DurationType="OneShot" DurationMin="1.551563" DurationMax="1.551563">
 					<IncludedMemoryFiles>
-						<File Id="669037842" Language="SFX">
-							<ShortName>RiverAmbience.wav</ShortName>
-							<Path>SFX/RiverAmbience_10C4C929.wem</Path>
+						<File Id="241878467" Language="SFX">
+							<ShortName>Curse.wav</ShortName>
+							<Path>SFX/Curse_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2830736011" Name="VillageAmbience" ObjectPath="\Events\Default Work Unit\VillageAmbience" DurationType="OneShot" DurationMin="50.000000" DurationMax="50.000000">
+				<Event Id="1557453313" Name="RequestCue" ObjectPath="\Events\Default Work Unit\RequestCue" DurationType="OneShot" DurationMin="1.177256" DurationMax="1.197834">
+					<IncludedMemoryFiles>
+						<File Id="705348409" Language="SFX">
+							<ShortName>RequestCue.wav</ShortName>
+							<Path>SFX/RequestCue_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1570418421" Name="RiverAmbience" ObjectPath="\Events\Default Work Unit\RiverAmbience" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="669037842" Language="SFX">
+							<ShortName>RiverAmbience.wav</ShortName>
+							<Path>SFX/RiverAmbience_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2830736011" Name="VillageAmbience" ObjectPath="\Events\Default Work Unit\VillageAmbience" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="729262975" Language="SFX">
 							<ShortName>JapaneseVillageAmbience.wav</ShortName>
-							<Path>SFX/JapaneseVillageAmbience_10C4C929.wem</Path>
+							<Path>SFX/JapaneseVillageAmbience_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

@@ -5,6 +5,8 @@
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Desktop\InariGame\"/>
 				<Property Name="Event Action List\{51A94632-7689-44D8-A8B0-E4AC449815AA}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{6D1FE1B4-CC1D-4CEB-84DB-C297CE60C532}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{7095817E-06E2-492A-B447-71C901E63384}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7A1AF58C-0BF5-4F77-8A4F-3751031FCD10}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">

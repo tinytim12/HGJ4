@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 7057fb797341da4291e249e44b1f5daf
     GuidInternal: 
-    m_lastTime: -8585769224374775808
+    m_lastTime: -8585769203004775808
     List:
     - name: Main
       guid: a8d2318c392588469bd3a28cdf7dfa20
@@ -94,8 +94,42 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 88af5f0f36b5604996d90a9e09e6f1e8
     GuidInternal: 
-    m_lastTime: -8585769224484775808
+    m_lastTime: -8585769203044775808
     List:
+    - name: Curse
+      guid: b4e11f6d1dcceb4c84dbc297ce60c532
+      id: 2220766949
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 88af5f0f36b5604996d90a9e09e6f1e8
+      - ElementName: Curse
+        ObjectType: 3
+        guid: b4e11f6d1dcceb4c84dbc297ce60c532
+      Path: Events/Default Work Unit/Curse
+      maxAttenuation: 0
+      maxDuration: 1.551563
+      minDuration: 1.551563
+    - name: RequestCue
+      guid: 7e819570e2062a49b44771c901e63384
+      id: 1557453313
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 88af5f0f36b5604996d90a9e09e6f1e8
+      - ElementName: RequestCue
+        ObjectType: 3
+        guid: 7e819570e2062a49b44771c901e63384
+      Path: Events/Default Work Unit/RequestCue
+      maxAttenuation: 0
+      maxDuration: 1.197834
+      minDuration: 1.177256
     - name: RiverAmbience
       guid: 3246a9518976d844a8b0e4ac449815aa
       id: 1570418421
@@ -111,8 +145,8 @@ MonoBehaviour:
         guid: 3246a9518976d844a8b0e4ac449815aa
       Path: Events/Default Work Unit/RiverAmbience
       maxAttenuation: 0
-      maxDuration: 35
-      minDuration: 35
+      maxDuration: -1
+      minDuration: -1
     - name: VillageAmbience
       guid: 8cf51a7af50b774f8a4f3751031fcd10
       id: 2830736011
@@ -128,8 +162,8 @@ MonoBehaviour:
         guid: 8cf51a7af50b774f8a4f3751031fcd10
       Path: Events/Default Work Unit/VillageAmbience
       maxAttenuation: 0
-      maxDuration: 50
-      minDuration: 50
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
@@ -187,7 +221,7 @@ MonoBehaviour:
     m_lastTime: -8585769225794775808
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 06000000070000000c0000000d000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000000c0000000d0000000e0000000f0000003400000035000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

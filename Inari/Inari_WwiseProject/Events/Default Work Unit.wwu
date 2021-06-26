@@ -25,6 +25,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="RequestCue" ID="{7095817E-06E2-492A-B447-71C901E63384}">
+					<ChildrenList>
+						<Action Name="" ID="{B0385B2C-826D-4C2E-9052-1C9A9B4BF3C4}" ShortID="689175228">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Request Cue" ID="{8379CB71-8FA0-444D-AFA4-85621B476252}" WorkUnitID="{51F6054F-B62D-4C69-A184-DEC49A96CACD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Curse" ID="{6D1FE1B4-CC1D-4CEB-84DB-C297CE60C532}">
+					<ChildrenList>
+						<Action Name="" ID="{88499A89-7538-4927-9FA9-2086A287B4B6}" ShortID="1008137875">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Curse" ID="{A1C78E08-0C1A-4BA3-885F-A62757F55424}" WorkUnitID="{51F6054F-B62D-4C69-A184-DEC49A96CACD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
