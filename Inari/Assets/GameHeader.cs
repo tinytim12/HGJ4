@@ -36,6 +36,12 @@ public class GameHeader : MonoBehaviour
 
     bool fading;
 
+    public bool firstBlessed;
+    public bool firstCursed;
+    public bool firstShrineBuilt;
+    public bool firstShrineDestroyed;
+    public bool firstShrineBuiltAgain;
+
 private void Awake()
     {
         // Create singleton to easily access GameHeader from other scripts
@@ -59,33 +65,53 @@ private void Awake()
 
         day = 1;
 
-        hunger = 50;
-        fortune = 50;
-        maxHunger = 50;
-        maxFortune = 100;
-
         playNarrator("Start");
-        playNarrator("Two");
         
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(hunger <= 0)
+        {
+            playNarrator("Win");
+        }
         checkShrines();
         if (timeRemaining > 0)
         {
             timeRemaining -= Time.deltaTime;
         }
-
-        if (timeRemaining < 40 && day == 2)
+        if (timeRemaining < 810 && day == 6)
+        {
+            day++;
+            onDayChanged(day);
+        }
+        else if (timeRemaining < 860 && day == 5)
         {
             day++;
             onDayChanged(day);
 
         }
-        else if (timeRemaining < 45 && day ==1)
+        else if (timeRemaining < 910 && day == 4)
         {
+            playNarrator("Warning");
+            day++;
+            onDayChanged(day);
+        }
+        else if (timeRemaining < 950 && day == 3)
+        {
+            day++;
+            onDayChanged(day);
+
+        }
+        else if (timeRemaining < 980 && day == 2)
+        {
+            day++;
+            onDayChanged(day);
+        }
+        else if (timeRemaining < 990 && day == 1)
+        {
+            Debug.Log("New Day");
             day++;
             onDayChanged(day);
         }

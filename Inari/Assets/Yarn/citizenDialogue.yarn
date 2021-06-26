@@ -1,20 +1,10 @@
-title: BoyZero
-tags: 
-colorID: 0
-position: -9,-422
----
-
-Hi there, Mr Fox! Did you see the necklace I dropped? I'll give you a treat if you find it.
-
-===
-
 title: BoyOne
 tags: 
 colorID: 0
 position: -9,-422
 ---
 
-How are you doing, Mr Fox? For me, I caught a fish today. Do foxes eat that?
+Boy: How are you doing, Mr Fox? For me, I caught a fish today. Do foxes eat that?
 
 ===
 
@@ -24,7 +14,7 @@ colorID: 0
 position: -9,-422
 ---
 
-Hi again, Mr Fox. We had a party and there's some leftover clams. You can have a bite if you want.
+Boy: Hi again, Mr Fox. We had a party and there's some leftover clams. You can have a bite if you want.
 
 ===
 
@@ -34,7 +24,7 @@ colorID: 0
 position: -9,-422
 ---
 
-Thanks again for the other day, Mr Fox. My mom made some noodles for you. That necklace was her favourite. 
+Boy: Thanks again for the other day, Mr Fox. My mom made some noodles for you. That necklace was her favourite. 
 
 ===
 
@@ -46,7 +36,7 @@ colorID: 0
 position: -9,-422
 ---
 
-I pray to you, Inari-okami. Guide my hand in the crafting of the sword, and I will return with wine and meat.
+Blacksmith: I pray to you, Inari-okami. Guide my hand in the crafting of the sword, and I will return with wine and meat.
 
 ===
 
@@ -55,7 +45,7 @@ tags:
 colorID: 0
 position: -9,-42
 ---
-I pray to you, Inari-okami. Guide my hand in the smelting of the iron, and I will return with wine and meat.
+Blacksmith: I pray to you, Inari-okami. Guide my hand in the smelting of the iron, and I will return with wine and meat.
 
 ===
 
@@ -65,7 +55,7 @@ colorID: 0
 position: -9,-4
 ---
 
-I pray to you, Inari-okami. Guide my hand in the forging of the steel, and I will return with wine and meat.
+Blacksmith: I pray to you, Inari-okami. Guide my hand in the forging of the steel, and I will return with wine and meat.
 
 ===
 
@@ -75,7 +65,7 @@ colorID: 0
 position: -9,-422
 ---
 
-Inari-sama, just rice is all I have to offer. Please let money flow into my pockets tonight.
+Prostitute: Inari-sama, just rice is all I have to offer. Please let money flow into my pockets tonight.
 
 ===
 
@@ -85,7 +75,7 @@ colorID: 0
 position: -9,-42
 ---
 
-Inari-sama, I hope rice is good enough for you. Please guard me from my stalker tonight.
+Prostitute: Inari-sama, I hope rice is good enough for you. Please guard me from my stalker tonight.
 
 ===
 
@@ -95,7 +85,7 @@ colorID: 0
 position: -9,-4
 ---
 
-Inari-sama, do you like rice? Please shield me from the Madam's wrath tonight.
+Prostitute: Inari-sama, do you like rice? Please shield me from the Madam's wrath tonight.
 
 ===
 
@@ -105,7 +95,7 @@ colorID: 0
 position: -9,-422
 ---
 
-Nice to meet you, O-Inari. If you would guide the shrimp into my nets today, I can share some with you.
+Fisherman: Nice to meet you, O-Inari. If you would guide the shrimp into my nets today, I can share some with you.
 
 ===
 
@@ -115,7 +105,7 @@ colorID: 0
 position: -9,-42
 ---
 
-This is a first time I've seen an O-Inari. Have you tried tun abefore? If we work together, we can catch some today.
+Fisherman: This is a first time I've seen an O-Inari. Have you tried tun abefore? If we work together, we can catch some today.
 
 ===
 
@@ -125,7 +115,7 @@ colorID: 0
 position: -9,-4
 ---
 
-I hope I'm not intruding, O-Inari. I would offer you a plate of octopus, if you could help me harvest some today.
+Fisherman: I hope I'm not intruding, O-Inari. I would offer you a plate of octopus, if you could help me harvest some today.
 
 ===
 
@@ -135,7 +125,7 @@ colorID: 0
 position: -9,-422
 ---
 
-Oh great Inari-sama, I pledge my life to you. Please soften my footsteps when I do tonight's work.
+Thief: Oh great Inari-sama, I pledge my life to you. Please soften my footsteps when I do tonight's work.
 
 ===
 
@@ -145,7 +135,7 @@ colorID: 0
 position: -9,-42
 ---
 
-Your greatness knows no bounds, Inari-sama. I dedicate my life to you. Please strengthen my lockpicks for tonight's work.
+Thief: Your greatness knows no bounds, Inari-sama. I dedicate my life to you. Please strengthen my lockpicks for tonight's work.
 
 ===
 
@@ -155,7 +145,7 @@ colorID: 0
 position: -9,-4
 ---
 
-I am unworthy before you, Inari-sama. My life is your possession. Please darken my shadow for tonight's work.
+Thief: I am unworthy before you, Inari-sama. My life is your possession. Please darken my shadow for tonight's work.
 
 ===
 
@@ -165,7 +155,7 @@ colorID: 0
 position: -9,-422
 ---
 
-Hey, fox. I've got the finest sake in the whole town. Just make the Minister's wife fall in love with me and it's yours.
+Westerner: Hey, fox. I've got the finest sake in the whole town. Just make the Minister's wife fall in love with me and it's yours.
 
 ===
 
@@ -175,7 +165,7 @@ colorID: 0
 position: -9,-42
 ---
 
-Are you the magical fox? Make the merchants delivery go faster. Hundred thousand yen sake for you if you do.
+Westerner: Are you the magical fox? Make the merchants delivery go faster. Hundred thousand yen sake for you if you do.
 
 ===
 
@@ -185,7 +175,7 @@ colorID: 0
 position: -9,-4
 ---
 
-Fox, grant my wish. Make all the town come to my party tonight. We'll let you taste our premium cured sake if you do.
+Westerner: Fox, grant my wish. Make all the town come to my party tonight. We'll let you taste our premium cured sake if you do.
 
 ===
 
@@ -195,7 +185,7 @@ colorID: 0
 position: -9,-422
 ---
 
-The Shogun has requested you to bless his vacation to the North. Payment will be made in tuna belly and polished rice.
+Nobleman: The Shogun has requested you to bless his vacation to the North. Payment will be made in tuna belly and polished rice.
 
 ===
 
@@ -205,8 +195,7 @@ colorID: 0
 position: -9,-42
 ---
 
-The Shogun has requested you to bless his son's coronation. Payment will be made in clam soup with buckwheat noodles.
-
+Nobleman: The Shogun has requested you to bless his son's coronation. Payment will be made in clam soup with buckwheat noodles.
 
 ===
 
@@ -216,7 +205,7 @@ colorID: 0
 position: -9,-4
 ---
 
-The Shogun has requested you to bless his palace. Payment will be made in stewed whale meat with seaweed.
+Nobleman: The Shogun has requested you to bless his palace. Payment will be made in stewed whale meat with seaweed.
 
 ===
 

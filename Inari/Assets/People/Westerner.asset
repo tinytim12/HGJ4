@@ -15,5 +15,5 @@ MonoBehaviour:
   dialogueRunnerScript: {fileID: 0}
   startNode: 
   faithfulCitizen: 0
-  divinityPoint: 4
+  hungerPoint: 5
   fortunePoint: 2

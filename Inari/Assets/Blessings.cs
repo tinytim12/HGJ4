@@ -38,6 +38,12 @@ public class Blessings : MonoBehaviour
         }
         building.sleep();
         dialogueUI.MarkLineComplete();
+
+        if (!gameHeader.firstBlessed)
+        {
+            gameHeader.firstBlessed = true;
+            gameHeader.playNarrator("Bless");
+        }
     }
 
     public void Curse()
@@ -49,6 +55,12 @@ public class Blessings : MonoBehaviour
         if (person.faithfulCitizen)
         {
             gameHeader.antiShrinePoints--;
+        }
+
+        if (!gameHeader.firstCursed)
+        {
+            gameHeader.firstCursed = true;
+            gameHeader.playNarrator("Curse");
         }
 
     }

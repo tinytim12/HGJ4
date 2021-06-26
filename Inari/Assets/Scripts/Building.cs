@@ -76,6 +76,7 @@ public class Building : MonoBehaviour
     {
 
         //yield on a new YieldInstruction that waits for 5 seconds.
+        sleepTime = Random.Range(10, 15);
         yield return new WaitForSeconds(sleepTime);
         awake = true;
         _icon.SetActive(true);

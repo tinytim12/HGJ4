@@ -5,7 +5,7 @@ position: -9,-424
 ---
 
     There was no more food in the forest, so I wandered to a human town.
-    A boy proposed an interesting trade.
+    A human proposed an interesting trade.
 
 
 ===
@@ -31,7 +31,7 @@ position: -9,-424
 
 ===
 
-title: Shrine
+title: ShrineBuilt
 tags: 
 colorID: 0
 position: -9,-424
@@ -42,7 +42,7 @@ position: -9,-424
 ===
 
 
-title: ShrineDestroy
+title: ShrineDestroyed
 tags: 
 colorID: 0
 position: -9,-424
@@ -71,5 +71,14 @@ position: -9,-424
 ---
     With every shrine built, their faith grows and my stomach fills.
     A few more shrines, and my hunger wil be sated.
+
+===
+
+title: Win
+tags: 
+colorID: 0
+position: -9,-424
+---
+    YOU WIN!
 
 ===

@@ -15,5 +15,5 @@ MonoBehaviour:
   dialogueRunnerScript: {fileID: 2480198943629176163, guid: e1898b5b39b116746b5f9dd3f2871b0c, type: 3}
   startNode: Fisherman
   faithfulCitizen: 1
-  divinityPoint: 3
+  hungerPoint: 2
   fortunePoint: 2
