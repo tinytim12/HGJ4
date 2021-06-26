@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{79FB5770-4173-42DA-91E2-49E44B1F5DAF}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{79FB5770-4173-42DA-91E2-49E44B1F5DAF}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{8C31D2A8-2539-4688-9BD3-A28CDF7DFA20}">
+					<ObjectInclusionList>
+						<ObjectRef Name="RiverAmbience" ID="{51A94632-7689-44D8-A8B0-E4AC449815AA}" WorkUnitID="{0F5FAF88-B536-4960-96D9-0A9E09E6F1E8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="VillageAmbience" ID="{7A1AF58C-0BF5-4F77-8A4F-3751031FCD10}" WorkUnitID="{0F5FAF88-B536-4960-96D9-0A9E09E6F1E8}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

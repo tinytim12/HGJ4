@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0F5FAF88-B536-4960-96D9-0A9E09E6F1E8}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{0F5FAF88-B536-4960-96D9-0A9E09E6F1E8}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="VillageAmbience" ID="{7A1AF58C-0BF5-4F77-8A4F-3751031FCD10}">
+					<ChildrenList>
+						<Action Name="" ID="{09BCA727-6D4A-4842-9C74-47D6EF7D824B}" ShortID="939417115">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="JapaneseVillageAmbience" ID="{7FBA1A0E-F8D1-4C32-8F07-A95D17CE60E7}" WorkUnitID="{51F6054F-B62D-4C69-A184-DEC49A96CACD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="RiverAmbience" ID="{51A94632-7689-44D8-A8B0-E4AC449815AA}">
+					<ChildrenList>
+						<Action Name="" ID="{38CA76CC-4C02-4796-ACB9-D1B0A53F7374}" ShortID="199094458">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RiverAmbience" ID="{EE1FC38A-2664-4F06-A15B-8CF6308D339E}" WorkUnitID="{51F6054F-B62D-4C69-A184-DEC49A96CACD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
