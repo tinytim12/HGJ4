@@ -29,36 +29,27 @@ public class Blessings : MonoBehaviour
 
     public void Blessing()
     {
-        if(gameHeader.fortune > 0)
-        {
-            Person person = building.personWhoLivesHere;
-            gameHeader.hunger -= person.hungerPoint;
-            gameHeader.fortune -= person.fortunePoint;
-            if (person.faithfulCitizen)
-            {
-                gameHeader.shrinePoints++;
-            }
-            building.sleep();
-            dialogueUI.MarkLineComplete();
-
-            if (!gameHeader.firstBlessed)
-            {
-                gameHeader.firstBlessed = true;
-                gameHeader.playNarrator("Bless");
-            }
-        }
         //divinity inCrease is initialy small
-        
+        Person person = building.personWhoLivesHere;
+        gameHeader.hunger -= person.hungerPoint;
+        gameHeader.fortune -= person.fortunePoint;
+        if (person.faithfulCitizen){
+            gameHeader.shrinePoints++;
+        }
+        building.sleep();
+        dialogueUI.MarkLineComplete();
+
+        if (!gameHeader.firstBlessed)
+        {
+            gameHeader.firstBlessed = true;
+            gameHeader.playNarrator("Bless");
+        }
     }
 
     public void Curse()
     {
         Person person = building.personWhoLivesHere;
-        if(gameHeader.fortune <= gameHeader.maxFortune)
-        {
-            gameHeader.fortune += person.fortunePoint;
-        }
-        
+        gameHeader.fortune += person.fortunePoint;
         building.sleep();
         dialogueUI.MarkLineComplete();
         if (person.faithfulCitizen)
