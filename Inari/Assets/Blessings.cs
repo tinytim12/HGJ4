@@ -29,9 +29,9 @@ public class Blessings : MonoBehaviour
 
     public void Blessing()
     {
-        if(gameHeader.fortune > 0)
-        {
-            Person person = building.personWhoLivesHere;
+        Person person = building.personWhoLivesHere;
+        if (gameHeader.fortune - person.fortunePoint >= 0)
+        {            
             gameHeader.hunger -= person.hungerPoint;
             gameHeader.fortune -= person.fortunePoint;
             if (person.faithfulCitizen)
@@ -45,7 +45,6 @@ public class Blessings : MonoBehaviour
             {
                 gameHeader.firstBlessed = true;
                 gameHeader.playNarrator("Bless");
-		AkSoundEngine.PostEvent("Blessing", gameObject);
             }
         }
         //divinity inCrease is initialy small
@@ -55,31 +54,23 @@ public class Blessings : MonoBehaviour
     public void Curse()
     {
         Person person = building.personWhoLivesHere;
-        if(gameHeader.fortune <= gameHeader.maxFortune)
+
+        gameHeader.fortune = Mathf.Min(gameHeader.maxFortune, person.fortunePoint+ gameHeader.fortune);
+        building.sleep();
+        dialogueUI.MarkLineComplete();
+        if (person.faithfulCitizen)
         {
-            gameHeader.fortune += person.fortunePoint;
-            building.sleep();
-            dialogueUI.MarkLineComplete();
-            if (person.faithfulCitizen)
-            {
-                gameHeader.antiShrinePoints--;
-            }
-
-            if (!gameHeader.firstCursed)
-            {
-                gameHeader.firstCursed = true;
-                gameHeader.playNarrator("Curse");
-		AkSoundEngine.PostEvent("Curse", gameObject);
-            }
+            gameHeader.antiShrinePoints--;
         }
+
+        if (!gameHeader.firstCursed)
+        {
+            gameHeader.firstCursed = true;
+            gameHeader.playNarrator("Curse");
+        }
+    }
         
         
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}

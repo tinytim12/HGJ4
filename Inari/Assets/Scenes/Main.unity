@@ -868,7 +868,7 @@ MonoBehaviour:
   dialogueUINarrator: {fileID: 1343916269}
   dialogueTextNarrator: {fileID: 1827280297}
   hunger: 20
-  fortune: 8
+  fortune: 7
   maxHunger: 30
   maxFortune: 8
   hungerPenalty: 10
