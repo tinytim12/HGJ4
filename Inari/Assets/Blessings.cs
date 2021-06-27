@@ -57,20 +57,21 @@ public class Blessings : MonoBehaviour
         if(gameHeader.fortune <= gameHeader.maxFortune)
         {
             gameHeader.fortune += person.fortunePoint;
+            building.sleep();
+            dialogueUI.MarkLineComplete();
+            if (person.faithfulCitizen)
+            {
+                gameHeader.antiShrinePoints--;
+            }
+
+            if (!gameHeader.firstCursed)
+            {
+                gameHeader.firstCursed = true;
+                gameHeader.playNarrator("Curse");
+            }
         }
         
-        building.sleep();
-        dialogueUI.MarkLineComplete();
-        if (person.faithfulCitizen)
-        {
-            gameHeader.antiShrinePoints--;
-        }
-
-        if (!gameHeader.firstCursed)
-        {
-            gameHeader.firstCursed = true;
-            gameHeader.playNarrator("Curse");
-        }
+        
 
     }
 
