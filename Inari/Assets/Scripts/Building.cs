@@ -18,6 +18,7 @@ public class Building : MonoBehaviour
     public int fortuneCurse;
     public Vector3 requestIconPosition = new Vector3(-0.583f, 2.42f, 0);
 
+    public GameHeader gameHeader;
     bool awake;
 
     public int sleepTime;
@@ -32,6 +33,8 @@ public class Building : MonoBehaviour
         _icon = Instantiate(icon, transform);
         _icon.transform.localPosition = requestIconPosition;
         _icon.SetActive(false);
+
+        gameHeader = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameHeader>();
     }
 
     private void Update()
@@ -57,7 +60,10 @@ public class Building : MonoBehaviour
             Debug.Log("Selected");
             
             transform.DOPunchPosition(new Vector3(0, 0.2f, 0), 0.5f);
+
             
+            gameHeader.citizenNumber++;
+
             buildingSelected = this;
             string nodeName = personWhoLivesHere.startNode;
             string nodeNo = nodeList[Random.Range(0, nodeList.Length)];

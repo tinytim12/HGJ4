@@ -11,7 +11,8 @@ public class GameHeader : MonoBehaviour
     public OnDayChange onDayChanged;
     public float timeRemaining;
     public Person narrator;
-    public Person[] persons;
+    public List<Person> persons;
+    public List<Person> personCopy;
 
     public YarnProgram citizenDialogue;
     public YarnProgram narratorDialogue;
@@ -34,6 +35,8 @@ public class GameHeader : MonoBehaviour
     public float maxHunger;
     public float maxFortune;
 
+    public float hungerPenalty;
+
     bool fading;
 
     public bool firstBlessed;
@@ -41,6 +44,8 @@ public class GameHeader : MonoBehaviour
     public bool firstShrineBuilt;
     public bool firstShrineDestroyed;
     public bool firstShrineBuiltAgain;
+
+    public int citizenNumber;
 
 private void Awake()
     {
@@ -58,6 +63,7 @@ private void Awake()
 
     void Start()
     {
+        personCopy = persons;
         dialogueRunner.Add(citizenDialogue);
         dialogueRunnerNarrator.Add(narratorDialogue);
 
@@ -72,6 +78,18 @@ private void Awake()
     // Update is called once per frame
     void Update()
     {
+
+        if (citizenNumber > 5)
+        {
+            playNarrator("Hunger", true);
+            citizenNumber = 0;
+            hunger += hungerPenalty;
+        }
+        if (hunger > maxHunger)
+        {
+            playNarrator("Lose");
+        }
+
         if(hunger <= 0)
         {
             playNarrator("Win");
@@ -119,7 +137,7 @@ private void Awake()
 
     void checkShrines()
     {
-        if(shrinePoints > 3)
+        if(shrinePoints > 5)
         {
             hunger -= 10;
             //build shrine
@@ -143,7 +161,7 @@ private void Awake()
         }
         if(antiShrinePoints > 10)
         {
-            hunger -= 10;
+ 
             List<Shrine> shrines = new List<Shrine>();
             foreach (var shrine in FindObjectsOfType<Shrine>())
             {
@@ -177,8 +195,11 @@ private void Awake()
         
         if(buildings.Count != 0)
         {
+            //intitialise building
             Building randomBuilding = buildings[Random.Range(0, buildings.Count)];
-            Person p = persons[Random.Range(0, day)];
+            int number = Random.Range(0, day);
+            Person p = personCopy[number];
+            personCopy.RemoveAt(number);
             randomBuilding.Alert(p);
         }
 
@@ -188,6 +209,13 @@ private void Awake()
     public void playNarrator(string line)
     {
         StartCoroutine(waitforDialogueNarrator(line));
+
+
+    }
+
+    public void playNarrator(string line, bool thing)
+    {
+        StartCoroutine(waitforDialogueNarratorWithYellow(line));
 
 
     }
@@ -229,14 +257,14 @@ private void Awake()
             StartCoroutine(FadeImage(1));
 
         }
-    }
+    } 
 
     IEnumerator waitForShrine(Shrine shrine, bool building)
     {
-        Debug.Log("Shrine building");
         yield return new WaitForSeconds(5);
         if (building)
         {
+            hunger -= 10;
             shrine.buildShrine();
         }
         else
@@ -262,6 +290,51 @@ private void Awake()
         StartCoroutine(FadeImage(1));
     }
 
+    IEnumerator FadeImageWithYellow(float t)
+    {
+        // fade from opaque to transparent
+        fading = true;
+        // loop over 1 second backwards
+        dialogueTextNarrator.color = new Color(255, 204, 0);
+        while (dialogueTextNarrator.color.a < 1.0f)
+        {
+            dialogueTextNarrator.color = new Color(dialogueTextNarrator.color.r, dialogueTextNarrator.color.g, dialogueTextNarrator.color.b, dialogueTextNarrator.color.a + (Time.deltaTime / t));
+            yield return null;
+        }
 
+
+        // fade from transparent to opaque
+        yield return new WaitForSeconds(4);
+
+        while (dialogueTextNarrator.color.a > 0)
+        {
+            dialogueTextNarrator.color = new Color(dialogueTextNarrator.color.r, dialogueTextNarrator.color.g, dialogueTextNarrator.color.b, dialogueTextNarrator.color.a - (Time.deltaTime / t));
+            yield return null;
+        }
+        fading = false;
+        dialogueTextNarrator.color = new Color(255, 255, 255);
+        dialogueUINarrator.MarkLineComplete();
+        if (dialogueRunnerNarrator.IsDialogueRunning)
+        {
+            StartCoroutine(FadeImage(1));
+
+        }
+    }
+
+    IEnumerator waitforDialogueNarratorWithYellow(string line)
+    {
+        //Cutscene Stuff
+        Debug.Log("Waiting");
+
+        while (dialogueRunnerNarrator.IsDialogueRunning || fading)
+        {
+
+            yield return null;
+        }
+        //More Cutscene Stuff and End the cutscene
+        Debug.Log("dialogue cued");
+        dialogueRunnerNarrator.StartDialogue(line);
+        StartCoroutine(FadeImageWithYellow(1));
+    }
 
 }
