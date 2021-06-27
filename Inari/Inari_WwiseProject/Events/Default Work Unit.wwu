@@ -58,17 +58,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Blessing" ID="{17130E32-DBCF-464B-A289-AC4B73C997F2}">
-					<ChildrenList>
-						<Action Name="" ID="{D5CCB814-539D-44EE-B137-43653966D87A}" ShortID="212300760">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Blessing" ID="{4B9DC9EF-A129-457A-9BA4-F3B9EB461BB7}" WorkUnitID="{51F6054F-B62D-4C69-A184-DEC49A96CACD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
