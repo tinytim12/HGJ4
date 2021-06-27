@@ -16,16 +16,24 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1008695950">
+		<SoundBank Id="3161908922" Language="SFX" Hash="449474625">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2220766949" Name="Curse" ObjectPath="\Events\Default Work Unit\Curse" DurationType="OneShot" DurationMin="1.551563" DurationMax="1.551563">
+				<Event Id="480245778" Name="Blessing" ObjectPath="\Events\Default Work Unit\Blessing" DurationType="OneShot" DurationMin="0.630787" DurationMax="0.630787">
+					<IncludedMemoryFiles>
+						<File Id="692439220" Language="SFX">
+							<ShortName>Blessing.wav</ShortName>
+							<Path>SFX/Blessing_9A693F2F.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2220766949" Name="Curse" ObjectPath="\Events\Default Work Unit\Curse" DurationType="OneShot" DurationMin="1.528879" DurationMax="1.528879">
 					<IncludedMemoryFiles>
 						<File Id="241878467" Language="SFX">
 							<ShortName>Curse.wav</ShortName>
-							<Path>SFX/Curse_10C4C929.wem</Path>
+							<Path>SFX/Curse_E8DB9702.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -42,6 +50,14 @@
 						<File Id="669037842" Language="SFX">
 							<ShortName>RiverAmbience.wav</ShortName>
 							<Path>SFX/RiverAmbience_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3353936342" Name="Shrine_Complete" ObjectPath="\Events\Default Work Unit\Shrine_Complete" DurationType="OneShot" DurationMin="2.062500" DurationMax="2.062500">
+					<IncludedMemoryFiles>
+						<File Id="859977620" Language="SFX">
+							<ShortName>Shrine_Complete.wav</ShortName>
+							<Path>SFX/Shrine_Complete_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

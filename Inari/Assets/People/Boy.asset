@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Boy
   m_EditorClassIdentifier: 
   dialogueRunnerScript: {fileID: 0}
-  startNode: Boy
+  startNode: 
   faithfulCitizen: 1
   hungerPoint: 1
   fortunePoint: 1

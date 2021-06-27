@@ -13,9 +13,11 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID BLESSING = 480245778U;
         static const AkUniqueID CURSE = 2220766949U;
         static const AkUniqueID REQUESTCUE = 1557453313U;
         static const AkUniqueID RIVERAMBIENCE = 1570418421U;
+        static const AkUniqueID SHRINE_COMPLETE = 3353936342U;
         static const AkUniqueID VILLAGEAMBIENCE = 2830736011U;
     } // namespace EVENTS
 

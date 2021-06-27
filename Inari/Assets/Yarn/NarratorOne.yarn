@@ -36,8 +36,8 @@ tags:
 colorID: 0
 position: -9,-424
 ---
-    A shrine has been erected in my honor. Many offerings will be placed there daily.
-    Which of the humans has done this...? I should reward them.
+    The humans have erected a shrine in my honour.
+    They now bless me with more offerings...I should continue rewarding them.
 
 ===
 
@@ -59,7 +59,7 @@ colorID: 0
 position: -9,-424
 ---
     Some humans make huge promises to me. 
-    But when my back is turned their faith disappears. 
+    But when my backs is turned their faith disappears. 
     I should watch out for them.
 
 ===
@@ -74,29 +74,11 @@ position: -9,-424
 
 ===
 
-title: Hunger
-tags: 
-colorID: 0
-position: -9,-424
----
-    Talking to humans drains my energy. My hunger has increased!
-
-===
-
 title: Win
 tags: 
 colorID: 0
 position: -9,-424
 ---
-    YOUR HUNGER IS GONE, YOU WIN!
-
-===
-
-title: Lose
-tags: 
-colorID: 0
-position: -9,-424
----
-    YOUR HUNGER IS FULL, YOU LOSE!
+    YOU WIN!
 
 ===

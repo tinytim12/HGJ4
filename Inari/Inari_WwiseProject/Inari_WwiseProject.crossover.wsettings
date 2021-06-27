@@ -4,10 +4,12 @@
 		<UserProjectSettings Name="" ID="{4C2A9CA7-229D-45AE-AEBF-A635C6F8FF40}">
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Desktop\InariGame\"/>
+				<Property Name="Event Action List\{17130E32-DBCF-464B-A289-AC4B73C997F2}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{51A94632-7689-44D8-A8B0-E4AC449815AA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{6D1FE1B4-CC1D-4CEB-84DB-C297CE60C532}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7095817E-06E2-492A-B447-71C901E63384}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7A1AF58C-0BF5-4F77-8A4F-3751031FCD10}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{FB7565AA-3D90-43C9-A0F4-4CDD67777FB9}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
@@ -60,7 +62,7 @@
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_22_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="ZXjFFMDv7ESRtsLFDl09CE8F9lEttmlMoYTexJqWys0="/>
+				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="cct5g6CPTUSvpIViG0diUmV4xRTA7+xEkbbCxQ5dPQhPBfZRLbZpTKGE3sSalsrNuUrqrLkWR06uMGVEATcDIG/wF9x6maJPmvIB6kV6QUY="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="iK9fDza1YEmW2QqeCebx6A=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value=""/>

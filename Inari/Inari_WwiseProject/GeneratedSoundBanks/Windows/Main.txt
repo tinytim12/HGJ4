@@ -1,12 +1,16 @@
 Event	ID	Name			Wwise Object Path	Notes
+	480245778	Blessing			\Default Work Unit\Blessing	
 	1557453313	RequestCue			\Default Work Unit\RequestCue	
 	1570418421	RiverAmbience			\Default Work Unit\RiverAmbience	
 	2220766949	Curse			\Default Work Unit\Curse	
 	2830736011	VillageAmbience			\Default Work Unit\VillageAmbience	
+	3353936342	Shrine_Complete			\Default Work Unit\Shrine_Complete	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	241878467	Curse	Y:\Documents\GitHub\HGJ4\Inari\Inari_WwiseProject\.cache\Windows\SFX\Curse_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction\Curse		298092
+	241878467	Curse	Y:\Documents\GitHub\HGJ4\Inari\Inari_WwiseProject\.cache\Windows\SFX\Curse_E8DB9702.wem		\Actor-Mixer Hierarchy\Default Work Unit\I\Curse		293688
 	669037842	RiverAmbience	Y:\Documents\GitHub\HGJ4\Inari\Inari_WwiseProject\.cache\Windows\SFX\RiverAmbience_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\RiverAmbience		6720144
+	692439220	Blessing	Y:\Documents\GitHub\HGJ4\Inari\Inari_WwiseProject\.cache\Windows\SFX\Blessing_9A693F2F.wem		\Actor-Mixer Hierarchy\Default Work Unit\I\Blessing		121240
 	705348409	RequestCue	Y:\Documents\GitHub\HGJ4\Inari\Inari_WwiseProject\.cache\Windows\SFX\RequestCue_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Request Cue\RequestCue		684144
 	729262975	JapaneseVillageAmbience	Y:\Documents\GitHub\HGJ4\Inari\Inari_WwiseProject\.cache\Windows\SFX\JapaneseVillageAmbience_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\JapaneseVillageAmbience		9600144
+	859977620	Shrine_Complete	Y:\Documents\GitHub\HGJ4\Inari\Inari_WwiseProject\.cache\Windows\SFX\Shrine_Complete_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shrine\Shrine_Complete		396240
 

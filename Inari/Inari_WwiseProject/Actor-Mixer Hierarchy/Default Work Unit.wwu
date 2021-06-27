@@ -159,13 +159,13 @@
 					</ChildrenList>
 					<ObjectLists/>
 				</RandomSequenceContainer>
-				<Folder Name="Interaction" ID="{DC17F06F-997A-4FA2-9AF2-01EA457A4146}" ShortID="727073548">
+				<Folder Name="I" ID="{DC17F06F-997A-4FA2-9AF2-01EA457A4146}" ShortID="727073548">
 					<ChildrenList>
 						<Sound Name="Curse" ID="{A1C78E08-0C1A-4BA3-885F-A62757F55424}" ShortID="320757868">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-15</Value>
+										<Value>-10</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -179,6 +179,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Curse" ID="{E30894F5-A54F-4936-A44D-90D4242D9946}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="0.0226836622807017"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0226836622807017"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Curse.wav</AudioFile>
 									<MediaIDList>
@@ -189,6 +194,75 @@
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Curse" ID="{E30894F5-A54F-4936-A44D-90D4242D9946}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Blessing" ID="{4B9DC9EF-A129-457A-9BA4-F3B9EB461BB7}" ShortID="725233769">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{844CCC17-14D3-4154-BD81-090C06F7B326}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C4E8F4C-B576-4675-AC0D-EB6BE2E1AEA6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Blessing" ID="{8CB50B8B-E707-4FC3-8756-2A5E9F1E2DCF}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="0.16087962962963"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.16087962962963"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Blessing.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="692439220"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Blessing" ID="{8CB50B8B-E707-4FC3-8756-2A5E9F1E2DCF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Shrine" ID="{ACEA4AB9-16B9-4E47-AE30-654401370320}" ShortID="616136274">
+					<ChildrenList>
+						<Sound Name="Shrine_Complete" ID="{77E8591D-CEC5-4658-A632-2A6966CEE921}" ShortID="162464439">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{844CCC17-14D3-4154-BD81-090C06F7B326}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5C4E8F4C-B576-4675-AC0D-EB6BE2E1AEA6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Shrine_Complete" ID="{CE9B6C1C-5858-4623-A5A0-06E0B2EE2C57}">
+									<Language>SFX</Language>
+									<AudioFile>Shrine_Complete.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="859977620"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Shrine_Complete" ID="{CE9B6C1C-5858-4623-A5A0-06E0B2EE2C57}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
