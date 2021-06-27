@@ -45,6 +45,7 @@ public class Blessings : MonoBehaviour
             {
                 gameHeader.firstBlessed = true;
                 gameHeader.playNarrator("Bless");
+		AkSoundEngine.PostEvent("Blessing", gameObject);
             }
         }
         //divinity inCrease is initialy small
@@ -68,6 +69,7 @@ public class Blessings : MonoBehaviour
             {
                 gameHeader.firstCursed = true;
                 gameHeader.playNarrator("Curse");
+		AkSoundEngine.PostEvent("Curse", gameObject);
             }
         }
         
